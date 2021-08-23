@@ -3,32 +3,64 @@ package com.revature.datatypes;
 public class Driver {
 	
 	/**
-	 * What is the purpose of the main method?
+	 * In any Java Program the main() method is the starting point from where the
+	 * compiler starts program execution.
 	 * 
-	 * The main() method is where the JIT compiler begins program
-	 * execution. The JIT compiler is a part of the JVM
-	 * @param args
+	 * @param args ... represents commands that could follow the class name when we
+	 *             call the "java" execution command to execute the bytecode.
+	 * 
+	 *             We will talk later about what it means to be "public", "static",
+	 *             and "void"....
 	 */
 	public static void main(String[] args) {
+
+		System.out.println("Testing output to the console...");
+
+		/**
+		 * A literal is a source code representation of a fixed value. They are
+		 * represented directly in the code without any computation.
+		 * 
+		 * Literals can be assigned to any primitive type variable. For example:
+		 */
+
+		boolean isCool = true; // 1 bit represents true or false value (either 0 or 1)
+		byte reallySmallNumber = 127; // 8 bits of reserved memory -> max value is 127, min value -128.
+		short shortNumber = 32767; // 16 bits of reserved mem
+		char letter = 'm'; // 16 bits of memory that represent a character or an ASCII character's numeric
+							// value
+		int standardNum = 10_000_000; // 32 bits of reserve mem
+		float lessPreciseDouble = 93.2f; // 32 bits of mem, allows you to make decimals, but it's-- less precise than a
+											// double
+		double decimal = 20.45; // 64 bits of mem
+		long bigNumber = 12345678L; // 64 bits
+
+		/*
+		 * Casting
+		 * 
+		 * Type casting is used to convert objects or variables of one type into another
+		 * 
+		 * Widening Casting (Implicit) -- Automatic Type Conversion Widening a smaller
+		 * primitive value to a bigger primitive type.
+		 * 
+		 * Narrowing Casting (Explicit) -- Need Explicit Conversion with () Narrowing a
+		 * bigger primitive value to a small primitive value.
+		 */
+
+		byte a = 40;
+		short b = a; // b == 40. a short has more reserved memory than a byte, so we can easily
+						// convert a byte to a short.
+
+		// byte anotherByte = b; // This isn't IMPLICITLY converted! We need to use
+		// casting for this. More on that in a bit.
+		int c = b;
+		double d = c;
+	
 		
-		// 8 Primitive datatypes
+		// a double is larger than an integer
+		double dub = 900.9;
+		int myInt = (int) dub; // we are using NARROW Casting to transform a large datatype to a small one
 		
-		boolean isCool = true; // 1 bit of reserved mem - 1 or 0
-		byte reallySmallNumber = 127; // 8 bits of reserved mem 
-		short shortNumber = 32467; // 16 bits of reserved mem
-		char letter = 'm'; // 16 bits of mem that represent an ASCII character
-		
-		int standardNum = 100; // 32 bits of mem
-		float lessPreciseDecimal = 93.2f; // 32 bits of mem
-		
-		double decimal = 145.63; // 64 bits of mem allows you to make decimal nums
-		long veryLargeNum = 12345L; // 64 bits of mem
-		
-		// Since Java 7 you can use an _ for readability of your code:
-		
-		long creditCardNumer = 1234_5678_7828_5252L;
-		int secondsInADay = 86_400;
-		
+		System.out.println("the double that has been explicitly cast to an int is now equal to " + myInt);
 		
 		int x = 4;
 		int y = 10;
@@ -40,22 +72,7 @@ public class Driver {
 		
 		System.out.println(name + " is " + (x + y * 100) + " years old");
 		
-		
-		// Casting 
-		
-		byte a = 40;
-		short b = a; // we have transformed a byte into a short
-		int c = b;
-		double d = c; // this works because we are doing something called Widening
-		
-		// Widening is when we transform a small datatype into a larger datatype.
-		// This is one type of CASTING
-		
-		// a double is larger than an integer
-		double dub = 900.9;
-		int myInt = (int) dub; // we are using NARROW Casting to transform a large datatype to a small one
-		
-		System.out.println("the double that has been explicitly cast to an int is now equal to " + myInt);
+	
 		
 		// Everything above  that we've defined are Java Literals, which are simply hard-coded fixed values that we assign to a variable.
 		
