@@ -10,7 +10,7 @@
 ## `Monday`
 > *Try solving these challanges and researching the answers to the questions below:*
 
-- :star: begin the [Java-20-Questions](https://classroom.github.com/a/zNfqeiJQ)
+- :star: begin the [Java-20-Questions](https://classroom.github.com/a/zNfqeiJQ) *Due September 10th 10am*
 
 - What are the 4 pillars of Object Oriented Programming (OOP)?
 
