@@ -81,6 +81,26 @@ public class Driver {
 		
 	
 		
+		/*
+		 * What are Wrapper Classes?
+		 * 
+		 * Wrapper class is the class name of the data type. 
+		 * Essentially it is the name
+		 * of the object when stored in the Heap.
+		 * 
+		 * Why do we use Wrapper classes?
+		 * 
+		 * Because data-structures within the Collections Framework Only work with
+		 * Objects.
+		 * 
+		 * What is an Object?
+		 * 
+		 * A Java Object is a self-contained component which consists of methods and
+		 * properties to make certain types of data useful. These methods/properties are
+		 * defined in a Class!
+		 */
+		
+		
 		int min; // Variable Declaration =- declaring the type
 		min = Integer.MIN_VALUE; // static variables are available on a class level
 		
