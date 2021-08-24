@@ -6,7 +6,7 @@
 ## `Tuesday`
 > *All QC questions that could be asked next Monday (or Tuesday) are posted [here](https://github.com/210823-Enterprise/demos/blob/main/week1/qc-questions.md).*
 
-- :star: begin the [Java-20-Questions](https://classroom.github.com/a/zNfqeiJQ) *Due September 10th 10am*
+- :star: begin the [Java-20-Questions](https://classroom.github.com/a/zNfqeiJQ) *Due September 10th @ 10am EST *
 
 - What are the 4 pillars of Object Oriented Programming (OOP)?
 
