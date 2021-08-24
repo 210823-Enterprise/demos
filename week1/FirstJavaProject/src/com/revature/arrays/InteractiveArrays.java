@@ -14,8 +14,11 @@ public class InteractiveArrays {
 		
 		int[] returnedArr = getIntegers(size);
 		
+		printArray(returnedArr);
+		
 		// you have to create the getAverage method
 		double avg = getAverage(returnedArr);
+		
 		
 		System.out.println(avg);
 		
@@ -41,6 +44,10 @@ public class InteractiveArrays {
 	
 	static void printArray(int[] arr) {
 		
+		// void means that the method does not return
+		for (int n : arr) {
+			System.out.println(n);
+		}
 	
 	}
 	
@@ -52,6 +59,30 @@ public class InteractiveArrays {
 	 * Once you create this method, call it within the main method, and print its return, after passing through
 	 * the array that returned by the getIntegers method.
 	 */
+	
+	static double getAverage(int[] arr) {
+		
+		double sum = 0;
+		
+		for(int i=0; i<arr.length; i++) {
+			sum += arr[i];
+		}
+		
+		return sum / arr.length;
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
 	
 	
