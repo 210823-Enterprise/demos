@@ -25,14 +25,16 @@ public class GradeCalcSolution {
 		 * This is why we need doubles...because if I had used ints, then this would
 		 * floor to 0 and multiply by 100 every time.
 		 */ 
-//		double percent = (score / maxScore) * 100; // we have to change this to double
+		
+		// close the scanner!
+		scan.close();
+		
 		double percent = calculatePercent(score, maxPoints);
 
-		// BONUS: To format it just cast to (int).
-		int cleanPercent = (int) percent;
+		// BONUS: To format it, apply the DecimalFormat.format method.
 
 		// Or you could do this:
-		// String cleanPercent = cleanDub.format(percent);
+		 String cleanPercent = cleanDub.format(percent);
 		/*
 		 * https://stackoverflow.com/questions/14204905/java-how-to-remove-trailing-
 		 * zeros-from-a-double
