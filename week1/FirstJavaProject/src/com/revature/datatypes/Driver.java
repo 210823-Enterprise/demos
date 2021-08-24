@@ -1,5 +1,8 @@
 package com.revature.datatypes;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Driver {
 	
 	/**
@@ -76,11 +79,64 @@ public class Driver {
 		
 		// Everything above  that we've defined are Java Literals, which are simply hard-coded fixed values that we assign to a variable.
 		
+	
+		
+		int min; // Variable Declaration =- declaring the type
+		min = Integer.MIN_VALUE; // static variables are available on a class level
+		
+		System.out.println("The minimum on an int is " + min);
 		
 		
+		// Completely convert the primitive data type into an Integer Object! 
+		// (AUTOBOXING) prim -> Class type (object)
+		Integer obj1 = new Integer(20); // creates a totally new object 
+		Integer obj2 = new Integer("20"); // also creates a totally new object 
+		
+		// Question 1: do obj1 & obj 2 have the same value?
+		System.out.println(obj1.equals(obj2)); // alt + shift + x, j -> YES they have the same value
+		
+		// Question 2: do obj1 & obj2 point to the same object in the heap?
+		System.out.println(obj1 == obj2); // the == checks for address in memory
+		
+		// Unboxing: object -> primitive type
+		
+		// Challenge: Convert the following Double Object to a primitive double:
+		Double dubObj = 15.45; // we are instantiating a Double object that has the value of the initialized primitve literal.
+		Double dubObj2 = new Double(76.123); 
+		// convert that to a double....
+		double dubPrimitive = dubObj; // implicit way of transofrming it
+		
+		double dubPrimitive2 = Double.valueOf(dubObj);
+		
+		
+		dubObj2 = null;
+		
+		
+		
+		// if I were to do something with
+		List<Double> dubList = new ArrayList<Double>();
+		
+		// ctrl + shift + o to auto import everything
+		dubList.add(dubObj);
+		dubList.add(dubObj2);
+		
+		/**
+		 * Wrapper Classes
+		 * Unboxing
+		 * Autoboxing
+		 * 
+		 * == vs. .equals();
+		 */
 		
 	}
 
+	
+	
+	
+	
+	
+	
+	
 }
 
 
