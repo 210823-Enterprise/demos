@@ -1,6 +1,10 @@
 # Week 1 Study Questions & Challenges
 > *Make sure you join our Slack :point_right: [here](https://join.slack.com/t/210823-enterprise/shared_invite/zt-uf8m1o2a-UohL6Xj2ygl~BBUf__CqGg)*!
 
+## `Tuesday`
+> *All QC questions that could be asked next Monday (or Tuesday) are posted [here](https://github.com/210823-Enterprise/demos/blob/main/week1/qc-questions.md).*
+
+
 <br>
 
 ## `Monday`
