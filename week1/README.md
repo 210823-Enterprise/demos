@@ -10,6 +10,25 @@
 ## `Monday`
 > *Try solving these challanges and researching the answers to the questions below:*
 
+- :star: begin the [Java-20-Questions](https://classroom.github.com/a/zNfqeiJQ)
+
+- What are the 4 pillars of Object Oriented Programming (OOP)?
+
+- What does the `static` non-access modifier mean?
+
+- Describe Encapsulation.
+
+- Describe Inheritance.
+
+- What is a constructor?
+
+- What is the difference between object scope and class scope?
+
+- Describe all of the **access modifiers**.
+
+- What does it mean to `@Override` a method?
+
+
 <br>
 
 - :star: Try this Hackerrank Contest [here](https://www.hackerrank.com/210823-enterprise-hr1). 
