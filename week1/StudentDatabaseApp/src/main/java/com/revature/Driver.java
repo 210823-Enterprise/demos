@@ -5,6 +5,7 @@ import java.util.Scanner;
 
 import com.revature.exceptions.NotAGradeException;
 import com.revature.models.Student;
+import com.revature.util.UtilityMethods;
 
 public class Driver {
 
@@ -43,26 +44,36 @@ public class Driver {
 			System.out.println("Enter the student's grade year:\n1 - Freshman\n2 - Sophomore\n3 - Junior\n4 - Senior");
 
 			int gradeYear = 0;
+			boolean isValidInput = false;
+			
+			while (!isValidInput) {
 
-			try {
-				gradeYear = scan.nextInt();
-			} catch (NotAGradeException e) {
-				System.out.println(e.getMessage());
-			} catch (InputMismatchException ex) {
-				System.out.println("Just encountered a " + ex + ". Please enter a valid number between 1 - 4.");
-			} finally {
-				scan.nextLine();
+				try {
+					gradeYear = scan.nextInt();
+					UtilityMethods.validateGradeYear(gradeYear);
+					
+					// anything right here WON'T be hit if I encounter any of these exceptions...
+					isValidInput = true;
+				} catch (NotAGradeException e) {
+					System.out.println(e.getMessage());
+				} catch (InputMismatchException ex) {
+					System.out.println("Just encountered a " + ex + ". Please enter a valid number between 1 - 4.");
+				} finally {
+					scan.nextLine();
+				}
+				
 			}
 
 			students[i] = new Student(firstName, lastName, gradeYear);
-			// setStudentId()
-			// sysout
+			
+			students[i].enroll();
+
 
 		}
 
 		// ctrl + forward slash to comment over all of it
 
-		// TODO: build a student model and a course model
+		UtilityMethods.printStudentInfo(students);
 
 	}
 

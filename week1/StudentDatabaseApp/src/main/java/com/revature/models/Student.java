@@ -46,6 +46,46 @@ public class Student {
 	}
 	
 	// enroll()
+	public void enroll() {
+		
+		List<Course> coursesToAdd = new ArrayList<Course>();
+		
+		boolean isDone = false;
+		
+		while(!isDone) {
+			
+			System.out.println("Enter a course to enroll in: ");
+			
+			String courseName = scan.next();
+			
+			// if the user presses q to quit, we quit out of the loop..
+			if (!courseName.equalsIgnoreCase("q")) {
+				
+				Course newCourse = new Course(courseName);
+				
+				coursesToAdd.add(newCourse);
+				tuitionBalance += Course.costOfCourse;
+				
+				scan.nextLine();	
+				
+			} else {
+				
+				// if they hit q....
+				System.out.println("===== quitting ========");
+				isDone = true;				
+			}
+
+		}
+	
+		courses = coursesToAdd;
+		
+		System.out.println("ENROLLED IN: " + courses.toString());
+		
+		
+	}
+	
+	
+	
 	
 	public void viewBalance() {
 		System.out.println("Your balance is $" + tuitionBalance);
