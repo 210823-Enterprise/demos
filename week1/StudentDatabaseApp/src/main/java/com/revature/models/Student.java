@@ -2,9 +2,11 @@ package com.revature.models;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class Student {
 	
+	private static Scanner scan = new Scanner(System.in);
 	private static int globalId = 1000; // everytime a student is instantiated I will increase this by 1.
 	
 	// firstname
@@ -29,25 +31,50 @@ public class Student {
 		this.lastName = lastName;
 		this.gradeYear = gradeYear;
 		
-		// call setStudentId()
+		setStudentId();
+		
+		System.out.println(firstName + " " + lastName + " " + gradeYear + " " + studentId);
 		
 	}
 	
 	
-	
-	// first student - > 21001
-	// second student (senior) -> 41002 
-	
-	
-	// setStudentId()
+	// setStudentId() gradeYear concatenated static id  field
+	private void setStudentId() { 
+		globalId++;
+		this.studentId = gradeYear + "" + globalId; // necessary to SMUSH the ints together, not return as string
+		
+	}
 	
 	// enroll()
 	
-	// viewBalance()
+	public void viewBalance() {
+		System.out.println("Your balance is $" + tuitionBalance);
+	}
 	
-	// payTuition()
+	public void payTuition() {
+		
+		viewBalance();
+		
+		System.out.println("Enter your payment amount: ");
+		
+		double payment = scan.nextDouble();
+		tuitionBalance -= payment;
+		
+		System.out.println("Thank you for your payment of " + payment);
+		
+		viewBalance();
+		
+	}
 	
-	// showStatus() 
+	
+	// showStatus()
+	public void showStatus() {
+		
+		System.out.println("\nName: " + firstName + " " + lastName + "\nStudent ID: " + studentId
+				
+				+ "\nCourses enrolled in: " + courses.toString() + "\nTuition: " + tuitionBalance);
+		
+	}
 	
 	
 	
