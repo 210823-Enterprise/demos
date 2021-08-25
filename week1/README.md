@@ -1,8 +1,28 @@
 # Week 1 Study Questions & Challenges
 > *Make sure you join our Slack :point_right: [here](https://join.slack.com/t/210823-enterprise/shared_invite/zt-uf8m1o2a-UohL6Xj2ygl~BBUf__CqGg)*!
 
+<br>
+
 ## `Tuesday`
 > *All QC questions that could be asked next Monday (or Tuesday) are posted [here](https://github.com/210823-Enterprise/demos/blob/main/week1/qc-questions.md).*
+
+- :star: begin the [Java-20-Questions](https://classroom.github.com/a/zNfqeiJQ) *Due September 10th @ 10am EST *
+
+- What are the 4 pillars of Object Oriented Programming (OOP)?
+
+- What does the `static` non-access modifier mean?
+
+- Describe Encapsulation.
+
+- Describe Inheritance.
+
+- What is a constructor?
+
+- What is the difference between object scope and class scope?
+
+- Describe all of the **access modifiers**.
+
+- What does it mean to `@Override` a method?
 
 
 <br>
