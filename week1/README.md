@@ -4,7 +4,7 @@
 <br>
 
 ## `Wednesday`
-- :star: Try this HackerRank Challenge to practice Exception Handling
+- :star: Try [this HackerRank Challenge](https://www.hackerrank.com/210823-enterprise-hr2) to practice Exception Handling
 
 - What's the difference between and Error and an Exception?
 
