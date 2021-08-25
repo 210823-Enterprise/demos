@@ -19,6 +19,14 @@ public class Employee extends Person implements Serializable{
 	
 	// all the properties of Person are present in Employee but abstracted away from us
 	
+	/**
+	 * 
+	 * Serialization is the process of persisting an object from memory
+	 * to sequence of bits, ifor instance, like saving it onto your disk.
+	 * 
+	 */
+	private static final long serialVersionUID = -4133930993217911100L;
+	
 	private String dept;
 
 	
@@ -60,36 +68,5 @@ public class Employee extends Person implements Serializable{
 		Employee other = (Employee) obj;
 		return Objects.equals(dept, other.dept);
 	}
-
-	
-	
-	
-	
-//	@Override
-//	public int hashCode() {
-//		final int prime = 31;
-//		int result = 1;
-//		result = prime * result + ((dept == null) ? 0 : dept.hashCode());
-//		return result;
-//	}
-//
-//	@Override
-//	public boolean equals(Object obj) {
-//		if (this == obj)
-//			return true;
-//		if (obj == null)
-//			return false;
-//		if (getClass() != obj.getClass())
-//			return false;
-//		Employee other = (Employee) obj;
-//		if (dept == null) {
-//			if (other.dept != null)
-//				return false;
-//		} else if (!dept.equals(other.dept))
-//			return false;
-//		return true;
-//	}
-//	
-	
 	
 }
