@@ -21,8 +21,7 @@
 
 - Great resource on Collecetions [here](https://www.javatpoint.com/collections-in-java) 👈
    
-Binary Search: 
-<a href="https://gyazo.com/c8aa9f554a7081e2b4a9dbcf1c2b5f02"><img src="https://i.gyazo.com/c8aa9f554a7081e2b4a9dbcf1c2b5f02.gif" alt="Image from Gyazo" width="462"/></a>
+- Binary Search resource [here](https://www.geeksforgeeks.org/binary-search/) 👈
 
 
 <br>
