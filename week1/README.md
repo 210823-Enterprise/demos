@@ -11,6 +11,10 @@
    - How does `Map` Interface relate to the Collection Framework? (Does it extend `java.util.Collection`?)
 
 - What are the interfaces in the Collections API?
+   - List
+   - Set
+   - Queue
+   - Dequeue
 
 - What is the difference between a Set and a List?
 
