@@ -115,6 +115,13 @@ public class Student {
 				+ "\nCourses enrolled in: " + courses.toString() + "\nTuition: " + tuitionBalance);
 		
 	}
+
+
+	public String getStudentId() {
+		return studentId;
+	}
+
+	
 	
 	
 	
