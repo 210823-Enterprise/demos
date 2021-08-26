@@ -8,7 +8,7 @@
 
 - What's the difference between and Error and an Exception?
 
-- What's the difference between a Checked and Unchecked Runtime Exception?
+- What's the difference between a Checked and Unchecked Exception?
 
 - What's the difference between `Throwable`, `throws`, and `throw`. Resource [here](https://stackoverflow.com/questions/3940213/exception-handling-throw-throws-and-throwable#:~:text=throws%20%3A%20a%20method%20signature%20token,be%20thrown%20(and%20caught).)
 
