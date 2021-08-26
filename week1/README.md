@@ -14,7 +14,7 @@
    - List
    - Set
    - Queue
-   - Dequeue
+      - Dequeue
 
 - What is the difference between a Set and a List?
 
