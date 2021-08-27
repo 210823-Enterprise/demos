@@ -16,24 +16,30 @@ public class CollectionDriver {
 	public static void main(String[] args) {
 		
 		
-		/**
+		/*
 		 * List
 		 * 
-		 * - ordered Collection (sometimes called a sequence)
-		 * - may contain duplicates
-		 * - We use the list interface when we want to use the following operations
+		 * A List is an ordered Collection (sometimes called a sequence). Lists may contain duplicate elements.
+		 * In addition to the operations inherited from Collection, the List interface includes operations for the following:
 		 * 
+		 * 		+ Positional access 
+		 * 			— manipulates elements based on their numerical position in the list. This includes 
+		 * 			  methods such as get, set, add, addAll, and remove.
 		 * 
-		 * 		+ Positional access
-		 * 			- manipulating elements based on their numerical position in the list
-		 * 			- for example use methods like get(), set(), add(), remove() - think CRUD
-		 * 
-		 * 		+ Search
+		 * 		+ Search 
+		 * 			— searches for a specified object in the list and returns its numerical position. 
+		 * 			  Search methods include indexOf and lastIndexOf.
 		 * 
 		 * 		+ Iteration 
+		 * 			— extends Iterator semantics to take advantage of the list's sequential nature. 
+		 * 			  The listIterator methods provide this behavior.
 		 * 
-		 * 		+ Range-view (how big is the list?)
+		 * 		+ Range-view 
+		 * 			— The sublist method performs arbitrary range operations on the list.
 		 * 
+		 * The Java platform contains two general-purpose List implementations. ArrayList, which performs well when adding or removing from 
+		 * the collection frequently. A LinkedList which offers better performance when the collection will be accessed frequently (get and 
+		 * set methods).
 		 */
 		
 		List<Animal> animalList = new ArrayList<Animal>();
@@ -52,9 +58,15 @@ public class CollectionDriver {
 			
 		}
 		
-		// vectors are synchronized (thread safe)
-		
-		// vectors increase 100% when they need to expand.
+		/*
+		 * Vector differs from ArrayList in 2 ways:
+		 * 
+		 * - Data Growth: A vector will double in size when it expands. (Whereas an ArrayList increases by 50%) 
+		 * 
+		 * - Synchronization: It's slower because it blocks multiple threads from using it at once. (locking).
+		 * 		- If you're dealing with a multi-threaded program, and multiple threads are accessing one List,
+		 * 		- you want to make sure it's a Vector.
+		 */
 		List<Integer> numbers = new Vector<Integer>();
 		
 		numbers.add(3);
@@ -63,13 +75,16 @@ public class CollectionDriver {
 		
 		System.out.println(numbers);
 		
-		/**
-		 * Sets
+		/*
+		 * Set
 		 * 
-		 * - unordered
-		 * - DO NOT allow duplicates
-		 * 		+ They maintain a strong contract of the object and its hashcode and equals() method
+		 * A Set is a Collection that cannot contain duplicate elements. It models the mathematical set abstraction. The Set 
+		 * interface contains only methods inherited from Collection and adds the restriction that duplicate elements are 
+		 * prohibited. 
 		 * 
+		 * Set also adds a stronger contract on the behavior of the equals and hashCode operations, allowing Set 
+		 * instances to be compared meaningfully even if their implementation types differ. Two Set instances are equal if they 
+		 * contain the same elements.
 		 */
 		
 		System.out.println("==================== SETS BELOW =========================");
@@ -86,20 +101,25 @@ public class CollectionDriver {
 			
 		}
 
-
-		/**
+		/*
 		 * Queue
 		 * 
-		 * - A collection used to hold elements prior to processing
-		 * - FIFO order (first in, first out)
+		 * A collection designed for holding elements prior to processing. 
 		 * 
+		 * Besides basic Collection operations, queues provide additional insertion, extraction, and inspection operations. Each of these methods exists in two forms: one throws 
+		 * an exception if the operation fails, the other returns a special value (either null or false, depending on the 
+		 * operation). The latter form of the insert operation is designed specifically for use with capacity-restricted Queue 
+		 * implementations; in most implementations, insert operations cannot fail.
 		 * 
-		 * 
+		 * For the most part, queues maintain a first-in, first-out order (FIFO). One exception to this rule is the PriorityQueue
+		 * implementation, which order elements according to a supplied comparator, or the elements' natural ordering.
 		 */
 		
-		System.out.println("============= Queues! ");
+		Queue<Animal> animalQ = new LinkedList<>();
+		// In a Queue you can store duplicate values.
+		// This is a special linkedList with specific Queue operability
 		
-		Queue<Animal> animalQ = new LinkedList<Animal>();
+		System.out.println("============= Queues! ");
 		
 		// You can add duplicates in a Queue!!
 		animalQ.add(a1);
@@ -114,11 +134,12 @@ public class CollectionDriver {
 			
 		}
 		
-		/**
-		 *  Collections utility Class! Note the S! This is different from the Collection Interface....
-		 *  
-		 *  - static methods that operate on a collection...
-		 *  - polymorphic algorithms
+		/*
+		 * Collections Utility Class
+		 * 
+		 * This class consists exclusively of static methods that operate on or return collections. It contains polymorphic 
+		 * algorithms that operate on collections, "wrappers", which return a new collection backed by a specified collection, 
+		 * and a few other odds and ends.
 		 */
 		
 		System.out.println("vector before sorting");
