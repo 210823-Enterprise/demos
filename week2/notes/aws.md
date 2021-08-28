@@ -13,16 +13,8 @@ There are MANY different services, but we'll just focus on RDS:
 
 
 Some other services we'll get into later:  (I'm listing them here for now)
-- EC2: Elastic Compute Cloud
-    - Be careful about the name, don't mix it up
-    - Cloud Server
-    - Different OSes, such as linux, windows, mac, etc
-    - We'll use linux
-        - Often cheaper than the other choices
-- EBS: Elastic Block Storage
-    - Used to be its own service entirely
-        - But now exists primarily under EC2s and other services
-    - Isolated SSDs (Solid State Drive), that can be attached to other services
+- EC2 (Elastic Compute Cloud)
+- S3 (Simple Storage Service)
 
 <br>
 
