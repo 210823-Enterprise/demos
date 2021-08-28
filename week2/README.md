@@ -6,10 +6,10 @@
 ## `Monday`
 - 10:00am ET Quiz 📝
 
-- 1:00pm ET BlackRock First Impressions (*come with questions for them*)
+- 1:00pm ET BlackRock First Impressions (*come with questions for them*) 🕴️
   - Research BlackRock beforehand
 
-- 2:00pm Week 1 QC: Java Fundamentals
+- 2:00pm Week 1 QC: Java Fundamentals ❓
 
 
 
