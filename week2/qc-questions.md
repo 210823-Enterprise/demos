@@ -9,9 +9,11 @@ You should research and be able to answer the following questions at the ned of 
 <br>
 
 ## `Study Questions`
-> Go over these questions to prepare for QC on June 7th or 8th (exact date TBA).
+> Go over these questions to prepare for QC on Tuesday Sept. 7th.
 
-### SQL Questions
+<br>
+
+## SQL Questions
 1.  Explain what SQL is. What are some SQL RDBMS Vendors? *What is an RDBMS*?
     
 2.  Draw a simple ERD for modeling Students and Classes
@@ -56,8 +58,10 @@ You should research and be able to answer the following questions at the ned of 
 21.  What is the difference between scalar and aggregate functions? Give examples of each
 
 23.  
-    
-### JDBC Questions
+  
+<br>
+  
+## JDBC Questions
 1. What is JDBC?
 
 2. What are the core interfaces / classes in JDBC?
@@ -73,7 +77,9 @@ You should research and be able to answer the following questions at the ned of 
 7. Which interface is responsible for transaction management? 
     > `Connection` Interface.  See this resource here about [JDBC and Transaction management](https://www.javatpoint.com/transaction-management-in-jdbc#:~:text=In%20JDBC%2C%20Connection%20interface%20provides%20methods%20to%20manage%20transaction)
 
-### AWS & Cloud Computing Questions
+<br>
+
+## AWS & Cloud Computing Questions
 1. what are the benefits of cloud services?
 
 2. What are the 3 models of Cloud computing?
