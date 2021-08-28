@@ -1,5 +1,7 @@
 # Chinook SQL Lab
-In this exercise you will practice populating a database by running the provided `chinook.sql` scripts in sequential order within DBeaver.  Use SQL Sublanguages to return the requested information below:
+> *In this exercise you will practice populating a database by running the provided `chinook.sql` scripts in sequential order within DBeaver.  Use SQL Sublanguages to return the requested information below:*
+
+<br>
 
 ## 1.0 Build the Chinook Schema
 * In DBeaver, under `postgres` > `Schemas` > Create a new schema called **chinook**.
@@ -8,9 +10,10 @@ In this exercise you will practice populating a database by running the provided
 * Refresh the schema.
 * Open a new SQL editor and run the following queries:
 
+<br>
 
 ## 2.0 Challenges
----
+
 
 ### 2.1 SELECT
 * `SELECT` all records from the Employee table.
