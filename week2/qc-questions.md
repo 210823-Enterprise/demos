@@ -57,7 +57,6 @@ You should research and be able to answer the following questions at the ned of 
     
 21.  What is the difference between scalar and aggregate functions? Give examples of each
 
-23.  
   
 <br>
   
