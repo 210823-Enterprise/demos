@@ -196,7 +196,7 @@ mylist.add(new Person()); // what happens?
 * Do you need a catch block? Can have more than 1? Order of them?
   * Catch block is not necessary - try/finally will compile. You can have more than one catch block, but the order must be from most narrow exception to most broad/general.
 * What is base class of all exceptions? What interface do they all implement?
-  * The base class is `Exception`, which implements the `Throwable` interface
+  * The base class is `Exception`, which extends the `Throwable` class.
 * List some checked and unchecked exceptions?
   * Checked - `IOException`, `ClassNotFoundException`, `InterruptedException`
   * Unchecked - `ArithmeticException`, `ClassCastException`, `IndexOutOfBoundsException`, `NullPointerException`
