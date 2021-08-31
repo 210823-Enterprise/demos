@@ -29,11 +29,6 @@ CREATE TABLE public.users (
 ALTER TABLE public.users
 	ADD CONSTRAINT user_supervisor_fk
 	FOREIGN KEY (supervisor) REFERENCES public.users(id);
-	
-
-
--- DQL: Data Query Language
-SELECT * FROM public.users;
 
 
 -- DML: Data Manipulation Language to add data to our tables
@@ -46,6 +41,50 @@ INSERT INTO public.users (first_name, last_name, email, user_age)
 INSERT INTO public.users (first_name, last_name, email, user_age, supervisor)
 	VALUES ('Peter', 'Parker', 'spiderman@mail.com', 16, 1),
  		    ('Pepper', 'Potts', 'pepper@mail.com', 30, 1);
+
+
+-- DQL: Data Query Language
+SELECT * FROM public.users;
+
+-- selectively query names and save as a "virtual table" which is a view
+CREATE VIEW names AS SELECT first_name, last_name FROM public.users;
+
+SELECT * FROM names;
+
+-- concatenate and reformat the data with an alias with the AS keyword
+SELECT first_name || ' ' || last_name AS "Full Name" FROM public.users;
+
+DROP TABLE IF EXISTS public.phonenumbers CASCADE;
+
+CREATE TABLE public.phonenumbers (
+	id SERIAL PRIMARY KEY,
+	user_id INTEGER NOT NULL REFERENCES users(id), -- our FOREIGN key
+	home VARCHAR(20),
+	work_num VARCHAR(20),
+	mobile VARCHAR(20)
+);
+
+INSERT INTO public.phonenumbers (user_id, home, mobile) 
+	VALUES (1, '111-222-3333', '222-333-4444'),
+			(3, '777-888-9999', '434-222-0909');
+		
+SELECT * FROM phonenumbers;
+
+
+-- DML How would we delete Pepper Potts phoine number from the phonenumbers table?
+DELETE FROM public.phonenumbers WHERE user_id = 3;
+
+-- THIS IS DDL. HOW IS TRUNCATE DIFFERENT FROM DELETE? WHAT ABOUT DROP?
+TRUNCATE TABLE public.phonenumbers;
+
+
+
+
+
+
+
+
+
 
 
 
