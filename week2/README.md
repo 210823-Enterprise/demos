@@ -24,6 +24,8 @@
 
 - What is a **scalar function**? Example?
 
+- What are the different set oprators? (*i.e `UNION` vs. `UNION ALL` vs `INTERSECT`*)
+
 
 <br>
 
