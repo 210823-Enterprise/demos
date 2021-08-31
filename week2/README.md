@@ -1,5 +1,5 @@
 # Week 2: SQL, JDBC, and Cloud Computing
-- QC questions which will be asked on Tuesday Sept. 7th [here](https://github.com/210823-Enterprise/demos/blob/main/week2/qc-questions.md) 👈
+- QC questions which will be asked in the next QC (*date TBA*) [here](https://github.com/210823-Enterprise/demos/blob/main/week2/qc-questions.md) 👈
 - On Tuesday we will begin working with PostgreSQL, DBeaver, and SQL querying & data manipulation
 - Wednesday - Friday we will connect our Java Applications to our databases and migrate our database to one hosted on the AWS cloud through an RDS.
 
