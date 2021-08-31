@@ -4,6 +4,29 @@
 - Wednesday - Friday we will connect our Java Applications to our databases and migrate our database to one hosted on the AWS cloud through an RDS.
 
 
+## `Tuesday`
+- What is SQL? The sublanguages of SQL?
+  - DDL
+  - DML
+  - DCL
+  - TCL
+  - DQL
+
+- What is an RDBMS? What does it mean for a database to be a *relational* database?
+
+- What is Normalization?
+
+- Define 0NF, 1NF, 2NF, 3NF. Here's a great [resource on Normalization](https://www.guru99.com/database-normalization.html)
+
+- Define **Referential Integrity**
+
+- What is an **aggregate function**? Example?
+
+- What is a **scalar function**? Example?
+
+- What are the different **set oprators**? (*i.e `UNION` vs. `UNION ALL` vs `INTERSECT`*)
+
+
 <br>
 
 ## `Monday`
