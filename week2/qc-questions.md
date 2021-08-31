@@ -9,7 +9,7 @@ You should research and be able to answer the following questions at the ned of 
 <br>
 
 ## `Study Questions`
-> Go over these questions to prepare for QC on Tuesday Sept. 7th.
+> Go over these questions to prepare for the next QC (*date TBA*)
 
 <br>
 
