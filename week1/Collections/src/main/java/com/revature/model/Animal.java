@@ -34,23 +34,23 @@ public class Animal {
 		return "Animal [species=" + species + ", age=" + age + "]";
 	}
 
-	@Override
-	public int hashCode() {
-		return Objects.hash(age, species);
-	}
-
-	@Override
-	public boolean equals(Object obj) {
-		if (this == obj)
-			return true;
-		if (obj == null)
-			return false;
-		if (getClass() != obj.getClass())
-			return false;
-		Animal other = (Animal) obj;
-		return age == other.age && Objects.equals(species, other.species);
-	}
-	
+//	@Override
+//	public int hashCode() {
+//		return Objects.hash(age, species);
+//	}
+//
+//	@Override
+//	public boolean equals(Object obj) {
+//		if (this == obj)
+//			return true;
+//		if (obj == null)
+//			return false;
+//		if (getClass() != obj.getClass())
+//			return false;
+//		Animal other = (Animal) obj;
+//		return age == other.age && Objects.equals(species, other.species);
+//	}
+//	
 	
 
 	

@@ -48,6 +48,11 @@ public class CollectionDriver {
 		Animal a2 = new Animal("Tiger", 4);
 		Animal a3 = new Animal("Dog", 12);
 		
+		System.out.println("We have NOT overridden the equals() method...testing .equals().... " + a1.equals(a3));
+		System.out.println(a1 == a2);
+		
+		
+		
 		animalList.add(a1);
 		animalList.add(a2);
 		animalList.add(a3);
@@ -131,11 +136,11 @@ public class CollectionDriver {
 			System.out.println("Queue size: " + animalQ.size());
 			System.out.println("Processing... " + animalQ.poll()); // poll() removes the head of the queue
 			
-			
+			String x = "something'";
 		}
 		
 		/*
-		 * Collections Utility Class
+		 * Collections Utility Class (different from Collection Interface...)
 		 * 
 		 * This class consists exclusively of static methods that operate on or return collections. It contains polymorphic 
 		 * algorithms that operate on collections, "wrappers", which return a new collection backed by a specified collection, 

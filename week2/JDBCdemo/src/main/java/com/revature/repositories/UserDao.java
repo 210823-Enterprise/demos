@@ -18,7 +18,6 @@ public class UserDao implements IUserDao{
 			Connection conn = ConnectionUtil.getConnection();
 			
 			// We start with a SQL string
-			
 			String sql = "INSERT INTO sophiag.users (username, pwd, user_role) VALUES (?, ?, ?) RETURNING sophiag.users.id";
 			
 			PreparedStatement stmt = conn.prepareStatement(sql);

@@ -36,3 +36,19 @@ CREATE TABLE sophiag.applications (
 	id SERIAL PRIMARY KEY,
 	app_owner INTEGER NOT NULL REFERENCES sophiag.users(id)
 );
+
+
+
+SELECT * FROM sophiag.users;
+
+INSERT INTO sophiag.users(username, pwd, user_role) VALUES ('test', 'pass', 'Admin');
+
+
+
+
+
+
+
+
+
+
