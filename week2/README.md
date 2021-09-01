@@ -16,7 +16,7 @@
   - `CallableStatement` Interface
 
 - How do we protect against **SQL Injection**?
-  - This is very importnant for interviews.  Take a look at [OWASP top 10](https://owasp.org/www-project-top-ten/)
+  - This is very important for interviews.  Take a look at [OWASP top 10](https://owasp.org/www-project-top-ten/)
 
 - Explain the `DAO` Design Pattern.  What is it's purpose? Great resource [here](https://www.tutorialspoint.com/design_pattern/data_access_object_pattern.htm) 👈
   - **Data Access Object Interface** - (*i.e `IUserDao.java`*) This interface defines the standard operations to be performed on a model object(s).
