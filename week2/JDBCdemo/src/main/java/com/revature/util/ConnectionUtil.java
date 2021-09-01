@@ -8,6 +8,12 @@ import java.sql.SQLException;
 import java.util.Properties;
 
 /**
+ * What is JDBC?
+ * 
+ * JDBC (Java Database Connectivity) is the Java API that manages 
+ * connecting to a database, issuing queries and commands, 
+ * and handling result sets obtained from the database
+ * 
  * Singleton Class is a software design pattern that ensures there will be one
  * single instance of that class.
  * 

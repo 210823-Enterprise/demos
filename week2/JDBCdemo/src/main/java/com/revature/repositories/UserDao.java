@@ -115,6 +115,6 @@ public class UserDao implements IUserDao {
 		return -1;
 	}
 	
-	// TODO: add more UserDAO method implementations
+	// TODO: add more IUserDao method implementations
 
 }
