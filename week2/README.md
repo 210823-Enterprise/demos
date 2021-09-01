@@ -27,6 +27,11 @@
 
 - Why is **Logging** important?  Name some logging levels.
 
+- What is Multiplicity/ Cadinality in SQL?
+  - 1:1 - one to one relationship
+  - 1:n - one to many relationship
+  - n:n - many to many relationship, best expressed with join tables
+
 
 
 <br>
