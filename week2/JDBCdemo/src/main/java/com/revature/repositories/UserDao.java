@@ -41,7 +41,7 @@ import com.revature.util.ConnectionUtil;
  * 		- getInt()
  * 		- getString()
  * 
- * (5) CallableStatement	
+ * (5) CallableStatement Interface
  * 	- Using an object of this interface you can execute stored procedures. 
  * 	- Methods include prepareCall()
  * 	- A stored procedure is a prepared SQL code that you can save, so the code can be reused over and over again.
