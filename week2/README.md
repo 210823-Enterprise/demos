@@ -3,6 +3,17 @@
 - On Tuesday we will begin working with PostgreSQL, DBeaver, and SQL querying & data manipulation
 - Wednesday - Friday we will connect our Java Applications to our databases and migrate our database to one hosted on the AWS cloud through an RDS.
 
+<br>
+
+## `Wednesday`
+- What are the 5 main classes and interfaces included in the JDBC API?
+  - `DriverManager` Class
+  - `Connection` Interface
+  - `Statement` Interface
+  - `ResultSet` Interface
+  - `CallableStatement` Interface
+
+<br>
 
 ## `Tuesday`
 - What is SQL? The sublanguages of SQL?
