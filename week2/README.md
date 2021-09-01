@@ -6,6 +6,8 @@
 <br>
 
 ## `Wednesday`
+- What is `JDBC`? Where does this API come from?
+
 - What are the 5 main classes and interfaces included in the JDBC API?
   - `DriverManager` Class
   - `Connection` Interface
