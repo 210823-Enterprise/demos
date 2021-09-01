@@ -23,7 +23,7 @@
   
   - **Model Object or Value Object** - (*i.e `User.java`*) This object is simple POJO containing get/set methods to store data retrieved using DAO class.
 
-- Why is **LoggiData Access Object Interface - This interface defines the standard operations to be performed on a model object(s).ng** important?  Name some logging levels.
+- Why is **Logging** important?  Name some logging levels.
 
 
 
