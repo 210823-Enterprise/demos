@@ -13,6 +13,20 @@
   - `ResultSet` Interface
   - `CallableStatement` Interface
 
+- How do we protect against **SQL Injection**
+  - This is very importnant for interviews.  Take a look at [OWASP top 10](https://owasp.org/www-project-top-ten/)
+
+- Explain the `DAO` Design Pattern.  What is it's purpose? Great resource [here](https://www.tutorialspoint.com/design_pattern/data_access_object_pattern.htm) 👈
+  - **Data Access Object Interface** - (*i.e `IUserDao.java`*) This interface defines the standard operations to be performed on a model object(s).
+  
+  - **Data Access Object concrete Class** - (*i.e `UseroDao.java`*) This class implements above interface. This class is responsible to get data from a data source which can be database / xml or any other storage mechanism.
+  
+  - **Model Object or Value Object** - (*i.e `User.java`*) This object is simple POJO containing get/set methods to store data retrieved using DAO class.
+
+- Why is **LoggiData Access Object Interface - This interface defines the standard operations to be performed on a model object(s).ng** important?  Name some logging levels.
+
+
+
 <br>
 
 ## `Tuesday`
