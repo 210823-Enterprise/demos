@@ -5,15 +5,13 @@ import com.revature.models.User;
 /**
  * DAO is a data access object
  * 
- * it is used to separatee or persistance logic from our business logic
- * @author SophieGavrila
+ * it is used to separate our persistence logic from our business logic
  *
  */
 public interface IUserDao {
 	
 	int insert(User u); // we aim to return the primary key of the user inserted into the DB
 
-	
-	// all other methods tomorrow
+	// TODO: add other abstract methods
 
 }
