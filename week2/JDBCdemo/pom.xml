@@ -19,10 +19,16 @@
 			<version>42.2.18</version>
 		</dependency>
 		
-		<!--  JUnit 4 dep. -->
+				<!-- https://mvnrepository.com/artifact/log4j/log4j -->
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.17</version>
+		</dependency>
 		
-		<!--  Logging dep. Log4J -->
-
+		<!--  To register a newly added dependency in the project object model (pom.xml file),
+		you can EITHER run mvn clean install OR Right click on project > Maven Update -->
+		
 	</dependencies>
 
 </project>

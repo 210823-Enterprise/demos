@@ -5,6 +5,9 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Types;
+import java.util.List;
+
+import org.apache.log4j.Logger;
 
 import com.revature.models.User;
 import com.revature.util.ConnectionUtil;
@@ -49,12 +52,11 @@ import com.revature.util.ConnectionUtil;
 
 public class UserDao implements IUserDao {
 	
-	// TODO: add a static logger!
+	private static Logger log = Logger.getLogger(UserDao.class);
 
 	@Override
 	public int insert(User u) { // Think about the User u passed as a parameter as being generated from the input that
 								// a user gives through the console
-
 		try {
 
 			// Capture the single instance of the JDBC Connection (this is called a session)
@@ -98,12 +100,15 @@ public class UserDao implements IUserDao {
 				// all we need is the FIRST column's data (which is the PK of the inserted User)
 				int id = rs.getInt(1); // the "1" parameter represents the 1st column of data that we want
 				
+				// log the User's id that was inserted
+				log.info("Successfully insertes User with id: " + id);
+				
 				// if everything goes well, we return that fetched PK
 				return id;
 			}
 
 		} catch (SQLException e) {
-			// TODO add logging!
+			log.error("Unable to insert User");
 			e.printStackTrace();
 		}
 
@@ -113,6 +118,36 @@ public class UserDao implements IUserDao {
 		 * have a negative ID
 		 */
 		return -1;
+	}
+
+	@Override
+	public User findByUserName(String username) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<User> findAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public User findById(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean update(User u) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean delete(int id) {
+		// TODO Auto-generated method stub
+		return false;
 	}
 	
 	// TODO: add more IUserDao method implementations

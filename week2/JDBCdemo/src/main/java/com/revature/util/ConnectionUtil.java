@@ -7,6 +7,8 @@ import java.sql.DriverManager; // this is JDBC
 import java.sql.SQLException;
 import java.util.Properties;
 
+import org.apache.log4j.Logger;
+
 /**
  * What is JDBC?
  * 
@@ -25,6 +27,8 @@ import java.util.Properties;
  * contain all the necessary driver information (jdbc url, username, password).
  */
 public class ConnectionUtil {
+	
+	private static Logger log = Logger.getLogger(ConnectionUtil.class);
 
 	private static Connection conn = null;
 
@@ -44,10 +48,11 @@ public class ConnectionUtil {
 
 		try { // check if the ConnectionUtil instance exists or is open first...
 			if (conn != null && !conn.isClosed()) {
+				log.info("returned reused connection");
 				return conn;
 			}
 		} catch (SQLException e) {
-			// TODO: add logging stmt to tell the devs that something went wrong
+			log.error("we failed to re-use a connection.");
 			return null;
 		}
 
@@ -73,15 +78,13 @@ public class ConnectionUtil {
 			 */
 			conn = DriverManager.getConnection(url, username, password);
 
-			// TODO: Change this to a logging statement once we implement Log4J
-			System.out.println("Connection successful!");
+			log.info("Database Connection Established");
 
 		} catch (IOException e) {
-			// TODO add some logging
+			log.error("Cannot locate application.properties file.");
 			e.printStackTrace();
 		} catch (SQLException e) {
-			// TODO log an error!
-			System.out.println();
+			log.error("Cannot establish database connection");
 			return null;
 		}
 		

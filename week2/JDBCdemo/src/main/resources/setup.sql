@@ -41,12 +41,28 @@ CREATE TABLE sophiag.applications (
 
 SELECT * FROM sophiag.users;
 
-INSERT INTO sophiag.users(username, pwd, user_role) VALUES ('test', 'pass', 'Admin');
+INSERT INTO sophiag.users(username, pwd, user_role) 
+	VALUES ('Larry', 'secret', 'Employee'),
+			('Mary', '1234', 'Customer');
 
 
+INSERT INTO sophiag.accounts (balance, acc_owner)
+	VALUES (500, 6), (1000, 7);
+
+SELECT * FROM sophiag.accounts;
+
+SELECT * FROM sophiag.users_account_jt;
 
 
+INSERT INTO sophiag.users_account_jt
+	VALUES (1, 1),
+	(2, 2),
+	(6, 3),
+	(7, 4);
 
+-- JOIN from the accounts table and the users_account_jt WHERE the accowner_id is the same as the userId
+SELECT sophiag.accounts.id, sophiag.accounts.balance FROM sophiag.accounts
+	INNER JOIN sophiag.users_account_jt ON sophiag.accounts.id = sophiag.users_account_jt.acc_owner;
 
 
 
