@@ -4,7 +4,7 @@ Here you will find all of the notes from class aslong with study-guides, project
 
 ### Join our Slack :point_right: [here](https://join.slack.com/t/210823-enterprise/shared_invite/zt-uf8m1o2a-UohL6Xj2ygl~BBUf__CqGg)
 
-### Most Recent QC/Interview Guide can be found [here](https://github.com/210823-Enterprise/demos/blob/main/week1/qc-questions.md) :star:
+### Most Recent QC/Interview Guide can be found [here](https://github.com/210823-Enterprise/demos/blob/main/week2/qc-questions.md) :star:
 > QC is important! It is meant to simulate the interview process.  Check out [this guide on how to do well](https://github.com/210517-Enterprise/demos/blob/main/how-to-do-well-in-qc.md). 
 
 ### Slides can be found [here](https://docs.google.com/presentation/d/1lOrz4BWbZO4tkQlK94SQ08ARVwq9n5bCRLMNoEXTtec/edit?usp=sharing)
