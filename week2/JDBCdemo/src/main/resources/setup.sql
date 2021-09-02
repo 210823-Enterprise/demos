@@ -1,3 +1,4 @@
+  
 -- This is the script where I'm going to create the tables for my app
 
 DROP TYPE IF EXISTS sophiag.user_role CASCADE;
@@ -135,9 +136,3 @@ SELECT sophiag.accounts.id, sophiag.accounts.balance FROM sophiag.accounts
 		ON sophiag.accounts.id = sophiag.users_account_jt.account	
 			WHERE sophiag.users_account_jt.acc_owner = 5;
 -- The above query helps use find all the accounts that belong to a specific owner based on their ID
-
-
-
-
-
-
