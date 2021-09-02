@@ -13,7 +13,7 @@ public class UserService {
 	
 	// Directly injecting the interface specifications and class that Service depends on
 	// DEPENDENCY INJECTION
-	private static IUserDao udao = new UserDao();
+	public IUserDao udao = new UserDao();
 	
 	private static Logger log = Logger.getLogger(UserService.class);
 	
