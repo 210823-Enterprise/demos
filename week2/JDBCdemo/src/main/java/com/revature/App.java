@@ -52,26 +52,28 @@ public class App {
 			
 			if (yesOrNo.equalsIgnoreCase("y")) {
 				
-				// what parameter does the openAccount method take?
-				// we neeed to pass through the id of the user who's making the account
-				aserv.openAccount(u);
 				
+				for (int i=0; i<2; i++) {
+					// this whole chunk of code will run 2 times
+					System.out.println("Opening account #" + i+1);
+					aserv.openAccount(u); // The User I pas through represent the user whose userId will be the ownerId of the accounts created
+					
+				}	
 				
+				aserv.viewAllAccountsByOwner(u.getId());
 			}
 			
-			
-			
-			
+
+
 		} else {
-			
+			System.out.println("Goodbye!");
+			System.exit(0);
 			// call some method like userv.login()
 			
 			// whatever funcationlity that login() method proivides...
 			
 		}
-		
-		
-		
+
 	}
 
 }

@@ -20,20 +20,35 @@ public class AccountService {
 	public Account openAccount(User u) {
 		
 		// it prompts the user to enter an initial deposit
+		System.out.println("Please enter you intial deposit: \n");
+		
+		double deposit = scan.nextDouble();
 		
 		// it reads back to the user the deposit entered
+		System.out.println("You deposited $" + deposit);
 		
 		// it creates a new account with the User's id as the accounts ownerId property....
+		// it's totally ok if you create a separate constructor
+		Account a  = new Account(0, deposit, u.getId());
 		
 		// then it calls the adao.insert() method to persist the account to the DB
-		
 		// make sure you grab the generated PK from the insert method
+		int pk = adao.insert(a);
 		
 		// return the full account object (with it's generated PK as the id)
+		a.setId(pk);
 		
-		return null;
+		return a;
+	}
+	
+	
+	public void viewAllAccountsByOwner(int ownerId) {
 		
-		// answer at 11:35am ET
+		for (Account a: adao.findByOwner(ownerId)) {
+			
+			System.out.println(a);
+			
+		}
 		
 	}
 	
