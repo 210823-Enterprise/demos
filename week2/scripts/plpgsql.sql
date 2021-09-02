@@ -56,6 +56,8 @@ AS $$
 LANGUAGE plpgsql;
 
 
+SELECT multiply(5, 10, 4);
+
 -- we're  going to create a function with variables 
 -- that fethces the ery last track from the chinook db
 SELECT * FROM chinook."Track";

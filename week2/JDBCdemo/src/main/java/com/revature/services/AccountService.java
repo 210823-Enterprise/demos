@@ -1,5 +1,6 @@
 package com.revature.services;
 
+import java.util.List;
 import java.util.Scanner;
 
 import com.revature.models.Account;
@@ -10,7 +11,7 @@ import com.revature.repositories.IAccountDao;
 public class AccountService {
 	
 	// Inject the dependency that Account Service needs to persist data
-	static IAccountDao adao = new AccountDao();
+	public IAccountDao adao = new AccountDao();
 	
 	// create an openAccount method that will include a scanner and call  the accDao.insert() method
 	
@@ -51,6 +52,13 @@ public class AccountService {
 		}
 		
 	}
+	
+	public List<Account> findByOwner(int userId) {
+		
+		return adao.findByOwner(userId);
+		
+	}
+	
 	
 
 }

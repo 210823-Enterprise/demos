@@ -65,7 +65,7 @@ public class UserServiceTests {
 		
 		dummyUser = new User(0, "spongebob", "pineapple", Role.Admin, new ArrayList<>());
 			
-		// Generate a hard coded random primary number hta twill be returned by the mockdao's insert method
+		// Generate a hard coded random primary number that twill be returned by the mockdao's insert method
 		Random r = new Random();
 		int fakePk = r.nextInt(100);
 		
