@@ -15,7 +15,8 @@
 - How do you call Stored Procedures in SQL from JDBC? (_Think about the Interfaces availble in the JDBC API_)
 
 - What is Maven?
-  - What are teh Maven Lifecycles?
+  - Define the Maven Lifecycle.
+  - What is `XML`?
 
 - :star: see this Maven Demo & guide [here](https://github.com/210823-Enterprise/demos/blob/main/week2/notes/maven.md) 👈
 
