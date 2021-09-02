@@ -17,7 +17,7 @@
 */
 
 /*
-	Stored Functions
+	Stored Functions (slightly different! Return a value)
 	
 		create [or replace] function [name] (params)
 		returns [type]
