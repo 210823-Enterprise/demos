@@ -9,7 +9,7 @@ import org.apache.log4j.Logger;
  */
 public class LoggingDriver {
 
-	// STep 1. Make a Logger for the class
+	// Step 1. Make a Logger for the class
 	private static Logger log = Logger.getLogger(LoggingDriver.class);
 	
 	

@@ -18,9 +18,34 @@ public class AccountDao implements IAccountDao {
 	private static Logger log = Logger.getLogger(AccountDao.class);
 
 	@Override
-	public int insert(Account a) {
-		// TODO Auto-generated method stub
-		return 0;
+	public int insert(Account a) { // this method returns the PrimaryKey of the Account we just inserted
+		
+		try(Connection conn = ConnectionUtil.getConnection()) {
+			
+			String sql = "INSERT INTO sophiag.accounts (balance, acc_owner) VALUES (?, ?) RETURNING sophiag.accounts.id";
+			
+			// PreparedStatment....
+			PreparedStatement stmt = conn.prepareStatement(sql);
+			
+			stmt.setDouble(1, a.getBalance());
+			stmt.setInt(2, a.getOwnerId());
+			
+			ResultSet rs;
+			
+			if ((rs = stmt.executeQuery()) != null) {
+				
+				rs.next();
+				int id = rs.getInt(1);
+				return id;
+			} 
+			
+		} catch (SQLException e) {
+			log.warn("Unable to insert Account");
+			e.printStackTrace();
+			return -1;
+		}
+				
+		return -1;
 	}
 
 	@Override   // 11:10am ET
@@ -79,7 +104,7 @@ public class AccountDao implements IAccountDao {
 			
 			String sql = "SELECT sophiag.accounts.id, sophiag.accounts.balance FROM sophiag.accounts\r\n" + 
 					"	INNER JOIN sophiag.users_account_jt \r\n" + 
-					"		ON sophiag.accounts.id = sophiag.users_account_jt.account 	\r\n" + 
+					"		ON sophiag.accounts.id = sophiag.users_account_jt.account 	\r\n" + // this was previously set to acc_owner	
 					"			WHERE sophiag.users_account_jt.acc_owner = ?;"; // this will have to be a joins statement
 			
 			PreparedStatement stmt = conn.prepareStatement(sql);

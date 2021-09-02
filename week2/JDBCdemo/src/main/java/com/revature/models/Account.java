@@ -6,6 +6,7 @@ public class Account implements Serializable{
 		
 	private int id; // primary key
 	private double balance; // in SQL this is represented by the NUMERIC data-type 
+	private int ownerId;
 	
 	public Account() {
 		super();
@@ -15,6 +16,21 @@ public class Account implements Serializable{
 		super();
 		this.id = id;
 		this.balance = balance;
+	}
+
+	public Account(int id, double balance, int ownerId) {
+		super();
+		this.id = id;
+		this.balance = balance;
+		this.ownerId = ownerId;
+	}
+	
+	public int getOwnerId() {
+		return ownerId;
+	}
+
+	public void setOwnerId(int ownerId) {
+		this.ownerId = ownerId;
 	}
 
 	public int getId() {
@@ -41,6 +57,7 @@ public class Account implements Serializable{
 		temp = Double.doubleToLongBits(balance);
 		result = prime * result + (int) (temp ^ (temp >>> 32));
 		result = prime * result + id;
+		result = prime * result + ownerId;
 		return result;
 	}
 
@@ -57,12 +74,16 @@ public class Account implements Serializable{
 			return false;
 		if (id != other.id)
 			return false;
+		if (ownerId != other.ownerId)
+			return false;
 		return true;
 	}
 
 	@Override
 	public String toString() {
-		return "Account [id=" + id + ", balance=" + balance + "]";
+		return "Account [id=" + id + ", balance=" + balance + ", ownerId=" + ownerId + "]";
 	}
+
+
 	
 }

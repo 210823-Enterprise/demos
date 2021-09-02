@@ -6,12 +6,17 @@ import org.apache.log4j.Logger;
 
 import com.revature.exceptions.RegisterUserFailedException;
 import com.revature.models.User;
+import com.revature.repositories.IUserDao;
+import com.revature.repositories.UserDao;
 
-public class UserService implements IUserService {
+public class UserService {
+	
+	// Directly injecting the interface specifications and class that Service depends on
+	// DEPENDENCY INJECTION
+	private static IUserDao udao = new UserDao();
 	
 	private static Logger log = Logger.getLogger(UserService.class);
 	
-	@Override
 	public User register(User u) { // if we insert a user from the console it doens't have an id yet
 		// takes in User object
 		log.info("Registering new user....");
