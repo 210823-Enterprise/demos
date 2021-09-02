@@ -5,6 +5,17 @@
 
 <br>
 
+## `Thursday`
+- What is a **Transaction** in SQL?
+
+- What does `A.C.I.D` mean regarding **Transactions** in SQL?
+
+- How do you call Stored Procedures in SQL from JDBC?
+
+- What is `PL/pgSQL`?
+
+<br>
+
 ## `Wednesday`
 - What is `JDBC`? Where does this API come from?
 
