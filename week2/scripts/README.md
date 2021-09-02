@@ -10,4 +10,4 @@
 
 <br>
 
-_If you are looking for the `setup.sql` script that creates the triggers and stored functions in the **JDBC Demo** go [here](https://github.com/210823-Enterprise/demos/blob/main/week2/JDBCdemo/src/main/resources/setup.sql)_
+_If you are looking for the `setup.sql` script that creates the triggers and stored functions in the **JDBC Demo** go [here](https://github.com/210823-Enterprise/demos/blob/main/week2/JDBCdemo/src/main/resources/setup.sql)_ 👈
