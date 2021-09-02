@@ -10,9 +10,9 @@
 
 - What does `A.C.I.D` mean regarding **Transactions** in SQL?
 
-- How do you call Stored Procedures in SQL from JDBC?
-
 - What is `PL/pgSQL`?
+
+- How do you call Stored Procedures in SQL from JDBC? (_Think about the Interfaces availble in JDBC API_)
 
 <br>
 
