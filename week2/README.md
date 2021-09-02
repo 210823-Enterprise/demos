@@ -18,6 +18,8 @@
   - Define the Maven Lifecycle.
   - What is `XML`?
 
+- Why do we use Mockito? Resource [here](https://www.tutorialspoint.com/mockito/index.htm) 👈
+
 - :star: see this Maven Demo & guide [here](https://github.com/210823-Enterprise/demos/blob/main/week2/notes/maven.md) 👈
 
 <br>
