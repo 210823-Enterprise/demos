@@ -1,7 +1,26 @@
-# Week 2: SQL, JDBC, and Cloud Computing
+# Week 2: SQL, RDBMS, JDBC, and Cloud Computing
 - QC questions which will be asked in week 5 QC (*Monday Sept 20th*) [here](https://github.com/210823-Enterprise/demos/blob/main/week2/qc-questions.md) 👈
 - On Tuesday we will begin working with PostgreSQL, DBeaver, and SQL querying & data manipulation
 - Wednesday - Friday we will connect our Java Applications to our databases and migrate our database to one hosted on the AWS cloud through an RDS.
+
+<br>
+
+## `Thursday`
+- What is a **Transaction** in SQL?
+
+- What does `A.C.I.D` mean regarding **Transactions** in SQL?
+
+- What is `PL/pgSQL`?
+
+- How do you call Stored Procedures in SQL from JDBC? (_Think about the Interfaces availble in the JDBC API_)
+
+- What is Maven?
+  - Define the Maven Lifecycle.
+  - What is `XML`?
+
+- Why do we use Mockito? Resource [here](https://www.tutorialspoint.com/mockito/index.htm) 👈
+
+- :star: see this Maven Demo & guide [here](https://github.com/210823-Enterprise/demos/blob/main/week2/notes/maven.md) 👈
 
 <br>
 
