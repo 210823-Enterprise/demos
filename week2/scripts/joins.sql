@@ -89,11 +89,37 @@ ON a."TrackId" = b."TrackId";
 -- https://towardsdatascience.com/sql-join-8212e3eb9fde
 
 
+SELECT * FROM chinook."Genre";
 
 
+-- Subqueries / nested queries
 
+-- we will use a subquery to find all genres that start with R
+-- and their genre ID is greater than 6
+-- shout out to Thinh!
+SELECT r_genres.*
+	FROM (
+		SELECT * FROM "Genre"
+			WHERE "Name" LIKE 'R%'
+	) AS r_genres
+WHERE r_genres."GenreId" > 6;
 
+-- where the length of the name < 6
 
+-- further nest this query
+SELECT r_less_than_6id.*
+	FROM 
+	( SELECT r_genres.*
+		FROM (
+			SELECT * FROM "Genre"
+				WHERE "Name" LIKE 'R%'
+		) AS r_genres
+	WHERE r_genres."GenreId" > 6) AS r_less_than_6id
+	
+WHERE LENGTH("Name") < 7;
+
+	
+	
 
 
 
