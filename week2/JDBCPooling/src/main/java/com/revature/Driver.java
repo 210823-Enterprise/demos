@@ -9,6 +9,13 @@ import javax.sql.DataSource;
 
 import com.revature.util.ConnectionPool;
 
+/**
+ * To understand what's going on in this demo, go here:
+ * 
+ * https://mobisoftinfotech.com/resources/blog/understanding-db-connection-pools-essential-knowledge-for-web-developers/
+ */
+
+
 // if you want o get really ahead start looking into what hibernate is -> Spring Data
 // Hibernate uses Hikari...Hikari is like Apache Commons DBCP, which is a Connection Pooling library
 
