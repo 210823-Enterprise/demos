@@ -74,8 +74,6 @@ public class PredicateDriver {
 		
 		Iterator<Employee> it = employees.iterator();
 		System.out.println(it.next());
-		
-		
 	}
 	
 	
