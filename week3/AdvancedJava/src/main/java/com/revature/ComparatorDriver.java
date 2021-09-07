@@ -39,16 +39,27 @@ public class ComparatorDriver {
 		
 		employees.forEach((e) -> System.out.println(e)); 
 		
+		System.out.println("========ANONYMOUS CLASS============");
 		
-		// Challenge 1:  call the Collections.sort() method and create a Comparator anonymous class to sort in DESCENDING order
+		// Challenge 1:  call the Collections.sort() method and create a Comparator anonymous class to sort NAME in DESCENDING order
+		Collections.sort(employees, new Comparator<Employee>() {
+
+			@Override
+			public int compare(Employee emp1, Employee emp2) {
+				return emp2.getName().compareTo(emp1.getName());
+			}			
+		});
 		
+		employees.forEach((e) -> System.out.println(e)); 
 		
+		System.out.println("==============Lambda===========");
+		// CHallenge 2: call the Colelctions.sort() method and create a LAMBDA function to sort the employees by age in ASCENDINg order
+		Collections.sort(employees, (emp1, emp2) -> Integer.valueOf(emp1.getAge()).compareTo(Integer.valueOf(emp2.getAge())));
 		
-		// CHallenge 2: call the Colelctions.sort() method and create a LAMBDA function to sort the employees by age in ASCENDING order
-		
-		
-		// complete by 12:00pm ET
-		
+		// you can also Cast
+//		Collections.sort(employees, (e1, e2) -> ((Integer)e1.getAge()).compareTo(e2.getAge()));
+
+		employees.forEach((e) -> System.out.println(e)); 
 
 	}
 }
