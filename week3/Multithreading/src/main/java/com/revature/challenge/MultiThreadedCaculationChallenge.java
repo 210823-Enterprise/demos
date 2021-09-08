@@ -46,17 +46,30 @@ public class MultiThreadedCaculationChallenge {
 
 	public BigInteger calculateResult(BigInteger base1, BigInteger power1, BigInteger base2, BigInteger power2) {
 
-		BigInteger result = BigInteger.ZERO; /* ! I'm only initializing this here so my compiler doens't yell at me.
+		BigInteger result; /* ! I'm only initializing this here so my compiler doens't yell at me.
 											  * When presenting the challenge, it's fine to leave it un-initialized
 											  * i.e ... BigInteger result; 
 											  */
-		
-		
+		PowerCalculatingThread t1 = new PowerCalculatingThread(base1, power1);
+		PowerCalculatingThread t2 = new PowerCalculatingThread(base2, power2);
+
 		/*
 		 * 
 		 * Calculate result = ( base1 ^ power1 ) + (base2 ^ power2). Where each
 		 * calculation in is calculated on a different thread.
 		 */
+		
+		t1.start();
+		t2.start();
+		
+		try {
+			t1.join();
+			t2.join();
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		
+		result = t1.getResult().add(t2.getResult());
 		return result;
 	}
 
@@ -73,9 +86,12 @@ public class MultiThreadedCaculationChallenge {
 
 		@Override
 		public void run() {
-			/*
-			 * Implement the calculation of result = base ^ power
-			 */
+			
+			result = BigInteger.ONE;
+			for (BigInteger i = BigInteger.ZERO; i.compareTo(power) !=0; i=i.add(BigInteger.ONE)) {
+				result = result.multiply(base);
+			}
+
 		}
 
 		public BigInteger getResult() {
