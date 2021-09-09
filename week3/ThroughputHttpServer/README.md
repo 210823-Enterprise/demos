@@ -1,7 +1,7 @@
 # JMeter Testing our Web Server to measure Throughput:
-[Apache JMeter](https://github.com/jmeter-maven-plugin/jmeter-maven-plugin) is an Apache project that can be used as a load testing tool for analyzing and measuring the performance of a web service.
+[Apache JMeter](https://github.com/jmeter-maven-plugin/jmeter-maven-plugin) is an Apache project that can be used as a load testing tool for analyzing and measuring the performance of a web service.  We will use JMeter to simulate 200 HTTP requests to our web server at once.  The words that will be sent in the query parameter are included in a CSV file.
 
-- Add the plugin to your `pom.xml`:
+- First, add the plugin to your `pom.xml`:
 ```xml
 <build>
     <plugins>
