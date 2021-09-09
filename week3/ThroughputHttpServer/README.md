@@ -3,34 +3,38 @@
 
 - Add the plugin to your `pom.xml`:
 ```xml
-<plugin>
-    <groupId>com.lazerycode.jmeter</groupId>
-    <artifactId>jmeter-maven-plugin</artifactId>
-    <version>3.4.0</version>
-    <executions>
-        <!-- Generate JMeter configuration -->
-        <execution>
-            <id>configuration</id>
-            <goals>
-                <goal>configure</goal>
-            </goals>
-        </execution>
-        <!-- Run JMeter tests -->
-        <execution>
-            <id>jmeter-tests</id>
-            <goals>
-                <goal>jmeter</goal>
-            </goals>
-        </execution>
-        <!-- Fail build on errors in test -->
-        <execution>
-            <id>jmeter-check-results</id>
-            <goals>
-                <goal>results</goal>
-            </goals>
-        </execution>
-    </executions>
-</plugin>
+<build>
+    <plugins>
+        <plugin>
+            <groupId>com.lazerycode.jmeter</groupId>
+            <artifactId>jmeter-maven-plugin</artifactId>
+            <version>3.4.0</version>
+            <executions>
+                <!-- Generate JMeter configuration -->
+                <execution>
+                    <id>configuration</id>
+                    <goals>
+                        <goal>configure</goal>
+                    </goals>
+                </execution>
+                <!-- Run JMeter tests -->
+                <execution>
+                    <id>jmeter-tests</id>
+                    <goals>
+                        <goal>jmeter</goal>
+                    </goals>
+                </execution>
+                <!-- Fail build on errors in test -->
+                <execution>
+                    <id>jmeter-check-results</id>
+                    <goals>
+                        <goal>results</goal>
+                    </goals>
+                </execution>
+            </executions>
+        </plugin>
+    </plugins>
+</build>
 ```
 <br>
 
