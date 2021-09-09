@@ -72,6 +72,8 @@ public class UserServiceTests {
 		// Here we are intercepting the UserService's call to the DAO layer
 		when(mockdao.insert(dummyUser)).thenReturn(fakePk); // this user should never be inserted into our database
 		
+		// The above line is a simulated data returned from the database 
+		
 		// Here we're testing does the register method properly call our dao layer?
 		User registeredUser = uservice.register(dummyUser);
 		
