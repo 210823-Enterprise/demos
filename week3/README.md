@@ -96,7 +96,16 @@ while(iterator.hasNext()) {
 
 - What's the difference between TreeMap and HashMap?
 
+<br>
 
+## Reflection
+- What is Reflection? What package does it come from in the JRE?
+
+- What is Introspection?
+
+- What does it mean to modify beahvior at runtime?
+
+- What is a Dynamic Proxy? Invocation Handler?
 
 
 
