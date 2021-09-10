@@ -11,8 +11,7 @@ following study guides on the previous week.  All of this material will include 
 
 What to expect on **Monday** ?
 - 10:00am Quiz: regarding Java SE API's Relfection, and Collections.
-- QC at 2pm (60 min to solve 3 coding challenges)
-- begin Multithreading on **Tuesday**
+- QC at 2pm (60 min to solve 2 out of 3 coding challenges)
 
 
 
