@@ -4,6 +4,8 @@
 > - [AWS](#aws)
 > - [DevOps/SDLC](#devops)
 > - [Docker](#docker)
+> ➕ Week 2 Topics (SQL, JDBC< RDMBS)
+> ➕ Week 3 Topics (Functional Interfaces, Collections, Reflection)
 
 <br>
 
