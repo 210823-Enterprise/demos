@@ -42,6 +42,33 @@
     
 15.  Explain the front controller design pattern
 
+<br>
+
+## AWS
+1. What are the benefits of cloud services?
+
+2. What are the 3 models of Cloud computing?
+
+3. What is AWS RDS? What type of service is this? Iaas, Paas, Saas?
+
+4. What is the relationship between a Region and an Availability Zone?
+
+5. What are Security Groups?
+
+6. Explain what an EC2 is.
+
+7. What is EBS?
+
+8. What's am AMI?
+
+9. What is an RDS?
+
+10. What's the difference between Horizontal and Vertical Scaling? 
+
+11. What is AWS IAM? (*DON'T* confuse this with AMI!)
+
+<br>
+
 ## Docker
 1. What is Docker?
 
@@ -90,29 +117,6 @@
 8. Explain the **SDLC**
 
 9. **What is Agile? Scrum? Kanban?**
-
-<br>
-
-## AWS
-1. What are the benefits of cloud services?
-
-2. What are the 3 models of Cloud computing?
-
-3. What is AWS RDS? What type of service is this? Iaas, Paas, Saas?
-
-4. What is the relationship between a Region and an Availability Zone?
-
-5. What are Security Groups?
-
-6. Explain what an EC2 is.
-
-7. What is EBS?
-
-8. What's am AMI?
-
-9. What is an RDS?
-
-10. What's the difference between Horizontal and Vertical Scaling? 
 
 <br>
 
