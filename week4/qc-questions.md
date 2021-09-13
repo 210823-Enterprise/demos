@@ -3,8 +3,8 @@
 > - [Servlets](#servlets)
 > - [AWS](#aws)
 > - [DevOps/SDLC](#devops)
-> - [Docker](#docker)
-> ➕ Week 2 Topics (SQL, JDBC< RDMBS)
+> - [Docker](#docker) <br>
+> ➕ Week 2 Topics (SQL, JDBC< RDMBS) <br>
 > ➕ Week 3 Topics (Functional Interfaces, Collections, Reflection)
 
 <br>
