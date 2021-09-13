@@ -4,8 +4,8 @@
 > - [AWS](#aws)
 > - [DevOps/SDLC](#devops)
 > - [Docker](#docker) <br>
-> ➕ Week 2 Topics (SQL, JDBC< RDMBS) <br>
-> ➕ Week 3 Topics (Functional Interfaces, Collections, Reflection)
+> ➕ [Week 2 Topics](https://github.com/210823-Enterprise/demos/blob/main/week2/qc-questions.md) (SQL, JDBC, RDMBS) <br>
+> ➕ [Week 3 Topics](https://github.com/210823-Enterprise/demos/blob/main/week3/README.md) (Threads, Functional Interfaces, Collections, Reflection)
 
 <br>
 
