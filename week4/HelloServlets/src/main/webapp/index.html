@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Hello Servlets!</title>
+
+
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+</head>
+<body>
+
+	<div class="supervillain-container">
+
+		<h1>Welcome to SuperVillain Servlets</h1>
+
+		<form method="GET" action="dirserv">
+			<!-- Tomcat web container read the web.xml and understands that /dirserv points to DirectServlet -->
+
+			<p>Direct Servlet, GET!</p>
+			<input type="submit" value="Direct Text Response">
+
+		</form>
+
+
+		<form method="POST" action="dirserv">
+
+			<p>Direct Servlet, POST!</p>
+			<input type="submit" value="Direct Text Response">
+
+		</form>
+
+		<form method="GET" action="indirserv">
+
+			<p>Indirect Servlet, GET!</p>
+			<input type="submit"
+				value="Request to get Response from Other Servlet via sendRedirect()">
+
+		</form>
+
+		<form method="POST" action="indirserv">
+
+			<p>Indirect Servlet, POST!</p>
+			<input type="submit"
+				value="Request to get Response from Other Servlet via forward()">
+
+		</form>
+
+		<hr>
+
+
+
+	</div>
+
+
+
+</body>
+</html>
