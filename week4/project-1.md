@@ -50,6 +50,5 @@ It is encouraged that you provide clear documentation on how to use your framewo
 <br>
 
 ## Team Workflow Tips
-- [ ] Practice Git SCM with your team with the [Git Workshop](https://github.com/210517-Enterprise/demos/tree/main/week4/git-workshop)
 - [ ] Use a [kanban board](https://www.atlassian.com/agile/kanban/boards) like [Trello](https://trello.com/en-US) for task management amongst your team.
 - [ ] Conduct daily [stand-up](https://www.atlassian.com/agile/scrum/standups) meetings.   
