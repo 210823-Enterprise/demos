@@ -1,11 +1,14 @@
 package com.revature.util;
 
 import java.lang.reflect.Field;
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
 import com.revature.annotations.Column;
 import com.revature.annotations.Entity;
+import com.revature.annotations.Id;
+import com.revature.annotations.JoinColumn;
 
 public class MetaModel<T> {
 
@@ -41,21 +44,53 @@ public class MetaModel<T> {
 		return clazz.getSimpleName();
 	}
 	
-	// public IdField getPrimaryKey() ... You would need to create the IdField class...
-	
-	public List<ColumnField> getColumns() {
-		Field[] fields = clazz.getDeclaredFields();
-		for(Field field : fields) {
-			Column column = field.getAnnotation(Column.class);
-			if (column != null) {
-				columnFields.add(new ColumnField(field));
-			}
-		}
-		
-		return columnFields;		
-	}
-	
-	// public List<ForeignKeyField> getForeignKeys()....
+    public IdField getPrimaryKey() {
+
+        Field[] fields = clazz.getDeclaredFields();
+        for (Field field : fields) {
+            Id primaryKey = field.getAnnotation(Id.class);
+            if (primaryKey != null) {
+                return new IdField(field);
+            }
+        }
+        throw new RuntimeException("Did not find a field annotated with @Id in: " + clazz.getName());
+    }
+
+    public List<ColumnField> getColumns() {
+
+        Field[] fields = clazz.getDeclaredFields();
+        for (Field field : fields) {
+            Column column = field.getAnnotation(Column.class);
+            if (column != null) {
+                columnFields.add(new ColumnField(field));
+            }
+        }
+
+        if (columnFields.isEmpty()) {
+            throw new RuntimeException("No columns found in: " + clazz.getName());
+        }
+
+        return columnFields;
+    }
+
+    public List<ForeignKeyField> getForeignKeys() {
+
+        List<ForeignKeyField> foreignKeyFields = new ArrayList<>();
+        Field[] fields = clazz.getDeclaredFields();
+        
+        for (Field field : fields) {
+        	
+            JoinColumn column = field.getAnnotation(JoinColumn.class);
+            
+            if (column != null) {
+                foreignKeyFields.add(new ForeignKeyField(field));
+            }
+        }
+
+        return foreignKeyFields;
+
+    }
+
 	
 	
 	
