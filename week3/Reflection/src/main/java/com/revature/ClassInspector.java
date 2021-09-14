@@ -13,7 +13,7 @@ import com.something.Adult;
 public class ClassInspector {
 
 	/**
-	 * H!ere we will use Reflection to analyze all the methods of a class by passing
+	 * Here we will use Reflection to analyze all the methods of a class by passing
 	 * the Class name (like Adult.class) as a parameter.
 	 * 
 	 * @param clazz (represents the class name we want to inspect)
