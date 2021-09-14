@@ -3,5 +3,5 @@
 
 ### :star: Kanban Board for Week 4 Workflow [here](https://trello.com/b/o8Hhrzqo/week-4-workflow) 👈
 
-### Project 1 Requirements [here](https://github.com/210823-Enterprise/demos/blob/main/week4/project-1.md)
+### :star: Project 1 Requirements [here](https://github.com/210823-Enterprise/demos/blob/main/week4/project-1.md) 👈
 
