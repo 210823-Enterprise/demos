@@ -8,6 +8,8 @@ import com.something.Person;
 /**
  * This is a Dynamic Proxy Design Pattern. A proxy is an "add-on" to a class,
  * that allows us to intercept method invocation and modify runtime behavior
+ * 
+ *  * Great resource: https://codegym.cc/groups/posts/208-dynamic-proxies
  */
 public class PersonInvocationHandler implements InvocationHandler {
 
@@ -24,10 +26,7 @@ public class PersonInvocationHandler implements InvocationHandler {
 	 * Proxy.newProxyInstance() constructor in order to make a proxy object.
 	 */
 
-	/*
-	 *  declare the INTERFACE that we're overriding
-	 *  We can only use invocationHandlers with interfcaes.
-	 */
+	// declare the INTERFACE that we're overriding We can only use invocationHandlers with Interfaces.
 	private Person person;
 
 	// a constructor for the proxy object

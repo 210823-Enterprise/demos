@@ -15,7 +15,7 @@ import com.something.Person;
  * 
  * https://www.geeksforgeeks.org/reflection-in-java/
  */
-public class App {
+public class DynamicProxyDriver {
 
 	public static void main(String[] args) {
 
