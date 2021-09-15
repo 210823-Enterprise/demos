@@ -27,6 +27,8 @@ public class DirectServlet extends HttpServlet {
 		PrintWriter out = response.getWriter();
 		out.println("<html><body><h1>The Servlet is talking directly to the client!</h1></body></html>");
 		
+		System.out.println("Context Example: " + getServletContext().getInitParameter("contextExample"));
+		
 	}
 	
 	@Override

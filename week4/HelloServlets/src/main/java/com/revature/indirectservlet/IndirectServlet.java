@@ -30,6 +30,8 @@ public class IndirectServlet extends HttpServlet {
 
 		// response.sendRedirect("http://localhost:8080/HelloServlets/somepage.html");
 		// // we can redirect the user to a separate page.
+		
+		System.out.println("Config Example" + getServletConfig().getInitParameter("contextExample"));
 	}
 
 	// What is the difference between sendRedirect() and forward() form the
