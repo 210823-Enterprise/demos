@@ -1,6 +1,8 @@
 # Front Controller Demo
 *The front controller design pattern means that all requests that come for a resource in an application will be handled by a single handler and then dispatched to the appropriate handler for that type of request. The front controller may use other helpers to achieve the dispatching mechanism (`RequestHelper.java`).*
 
+<br>
+
 ### Deployment Demo
 If you launch an EC2 instance (along with an RDS which you've linked to in the `JDBC url` portion of your `hibernate.cfg.xml` file, connect to your EC2 instance and run the following commands to deploy your app.
 
