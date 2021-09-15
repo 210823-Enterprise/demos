@@ -1,7 +1,8 @@
   
 # == Before you begin make sure that your EC2 Instance Security groups accept all traffic from SSH, HTTP, and custom TCP Port 8080 ==
 
-# 1. When you launch your instance, download your .pem key.  Drag it into a folder that's easily accessible.
+# 1. When you launch your instance, download your .pem key.  Drag it into a folder that's easily accessible
+#    OR you could just click "EC2 Instance connect" and connect via the integrated terminal in your browser
 
 # 2. Right click > GIt Bash into whatever directory holds your .pem key and paste the command below:
 #     ssh -i mynew_key ec2-user@ec2-34-204-200-76.compute-1.amazonaws.com
