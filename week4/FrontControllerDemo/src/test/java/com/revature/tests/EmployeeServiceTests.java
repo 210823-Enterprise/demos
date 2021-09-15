@@ -21,22 +21,21 @@ public class EmployeeServiceTests {
 	private EmployeeDao mockdao;
 	private EmployeeService eserv;
 	
-	
 	@Before
 	public void setup() {
 		
 		mockdao = mock(EmployeeDao.class);
 		eserv = new EmployeeService(mockdao);
-		// ^ We are declaring the dependency of the object within the class
-		
+		/**
+		  * We are declaring the dependency of the object within the class
+		  * via the constructor injection we defined in the EploseeService.java class
+		  */
 	}
 	
 	@After
 	public void teardown() {
-		
 		eserv = null;
 		mockdao = null;
-		
 	}
 	
 	// Happy Path Scenario
@@ -51,18 +50,20 @@ public class EmployeeServiceTests {
 		List<Employee> dummyDb = new ArrayList<>();
 		dummyDb.add(e1);
 		dummyDb.add(e2);
-		/**
-		 * What are we expecting when what happens?
-		 * 
-		 * WHEN the service layer calls confirm login with username Hawkeye and password arrows
-		 * THEN we are EXPECTING to return hawkeye
-		 */
+
 		when(mockdao.findAll()).thenReturn(dummyDb);
+		/**
+		 * WHAT are we expecting when WHAT happens?
+		 * 
+		 * WHEN the service layer ACTUALLY calls confirmLogin() with username "Hawkeye" and password "arrows"
+		 * and THEN calls the DAO layer to return data, the mocked dao will intercept
+		 * the call with our hard-coded dummyDb ArrayList,
+		 * THEN we are EXPECTING to return hawkeye (based on the logic of our Service method).
+		 */
 		
 		// expected, actual
 		assertEquals(e2, eserv.confirmLogin("Hawkeye", "arrows"));
-	}
-	
+	}	
 	
 	@Test
 	public void testFailConfirmLogin_returnNull() {
@@ -81,24 +82,4 @@ public class EmployeeServiceTests {
 		
 	}
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
 }
