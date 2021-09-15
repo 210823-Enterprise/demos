@@ -6,22 +6,19 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-/**
- * Servlet implementation class FrontController
- */
 public class FrontController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
-		// 1. save the URI and rewrite it to determine what functionaloty the user is requesting
+		// save the URI and rewrite it to determine what functionality the user is requesting based on URL
 		final String URI = request.getRequestURI().replace("/FrontControllerDemo/", "");
 		
 		switch(URI) {
-		case "login":
+		case "login": 
 			RequestHelper.processLogin(request, response);
 			break;
-		case "employees":
+		case "employees": // query the DB and return a list of all employees
 			RequestHelper.processEmployees(request, response);
 			break;
 		case "error":
