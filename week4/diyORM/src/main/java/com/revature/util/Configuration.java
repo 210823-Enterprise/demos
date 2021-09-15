@@ -11,7 +11,7 @@ public class Configuration {
 	private String dbUrl;
 	private String username;
 	private String password;
-	private List<MetaModel<Class<?>>> metaModelList;
+	private List<MetaModel<Class<?>>> metaModelList;  // List is a list of MetaModel<Dog>, MetaModel<Cat>
 	
 	// this essentially does what the Hibernate.cfg.xml mapping property does!
 	public Configuration addAnnotatedClass(Class annotatedClass) {
@@ -22,6 +22,7 @@ public class Configuration {
 			
 		}
 		
+		// we are adding MetaModel<SomeClass>
 		metaModelList.add(MetaModel.of(annotatedClass)); // we will amke this of() method
 		
 		// Create the of() method inside MetaModel to trasform a class
