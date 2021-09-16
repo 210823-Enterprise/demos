@@ -13,9 +13,9 @@ import com.revature.annotations.JoinColumn;
 public class MetaModel<T> {
 
 	private Class<T> clazz;
-	// private IdField primarykeyField;
+	private IdField primarykeyField;
 	private List<ColumnField> columnFields;
-	// private List<ForeignKeyField> foreignKeyFields
+	private List<ForeignKeyField> foreignKeyFields;
 	
 	// of() method to take in a class and transform it to a meta model
 	public static <T> MetaModel<T> of(Class<T> clazz) {
