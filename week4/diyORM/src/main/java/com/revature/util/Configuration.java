@@ -6,11 +6,7 @@ import java.util.List;
 
 public class Configuration {
 	
-	// all jdbc properties needed to establish a connection with the database
-	
-	private String dbUrl;
-	private String username;
-	private String password;
+
 	private List<MetaModel<Class<?>>> metaModelList;  // List is a list of MetaModel<Dog>, MetaModel<Cat>
 	
 	// this essentially does what the Hibernate.cfg.xml mapping property does!
