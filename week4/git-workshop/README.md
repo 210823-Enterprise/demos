@@ -26,7 +26,12 @@ Your group is going to practice git flow, and get a little creative at the same 
 
 * `one-line-test.md` should have a `"Hello world!"` message on line one, and a single line of text on line 2 (`"Replace me!"`).
 
-* The repo owner should save these files and `git push` them to a remote branch, and create a pull request to the main branch. Another member of the group should review it and approve it!
+* The repo owner should save these files and `git push` them to a **separate remote branch**, then create a pull request to the main branch. Another member of the group should review it and approve it!
+  > How do you create a separate branch? <br>
+  > `git checkout -b <branch-name>` Create a new branch and check it out <br>
+  > `git push origin <branch-name>` Push the new branch to the remote repo <br>
+  > The manually go to GitHub and create a pull request.  Your teammates must review, approve, and merge your branch to main.
+
 
 <br>
 
@@ -40,7 +45,7 @@ Your group is going to practice git flow, and get a little creative at the same 
 
 2. The repo owner assigns each group member a block of three empty lines to work on (2-4, 5-7, 8-10).
 
-3 Each group member then writes a haiku on their assigned three lines between the hello world message and goodbye world message.
+3 Each group member then creates their own branch and writes a haiku on their assigned three lines between the hello world message and goodbye world message.
 
 > A [haiku](https://en.wikipedia.org/wiki/Haiku) is a three line Japanese poetry form, with five syllables on the first line, seven on the second, and five on the final line.
 >
@@ -69,7 +74,7 @@ The second round begins in the same way. This time, the group works on the one-l
 
 1. Each group member should pull the updated main, and overwrite line 2 with something - anything - that comes to mind.
 
-2. Save changes and push to the remote origin, and then create simultaneous pull requests.
+2. Save changes and push to the remote origin custom branch, and then create simultaneous pull requests.
   - As you take turns to merge another person's pull request with the main branch, you'll note that the first merge is fine - github has no problem with people overwriting files!
 
     * The second attempt to merge another person's pull request will, however, cause an error. Github will instruct you that it cannot automatically merge the request, and that you will need to solve the problem on your local branch.
