@@ -12,9 +12,6 @@ import javax.servlet.http.HttpSession;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.revature.models.SuperVillain;
 
-/**
- * Servlet implementation class SessionServlet
- */
 public class SessionServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
@@ -62,7 +59,7 @@ public class SessionServlet extends HttpServlet {
 		out.write(new ObjectMapper().writeValueAsString(vill));
 		out.println("A villain is on the loose...(in the session)");
 		
-		// now we have to create a serv;et to retrieve the session
+		// now we have to create a servlet to retrieve the session
 		
 	}
 
