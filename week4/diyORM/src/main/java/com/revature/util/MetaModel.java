@@ -90,10 +90,4 @@ public class MetaModel<T> {
         return foreignKeyFields;
 
     }
-
-	
-	
-	
-	
-	
 }
