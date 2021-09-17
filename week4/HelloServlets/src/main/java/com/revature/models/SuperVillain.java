@@ -1,6 +1,14 @@
 package com.revature.models;
 
+import com.revature.Driver;
+
 public class SuperVillain {
+	
+	public static void main(String[] args) {
+		
+		add(4, 7);
+		
+	}
 	
 	private String name;
 	private String superPower;
