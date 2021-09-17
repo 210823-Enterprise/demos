@@ -1,4 +1,4 @@
-# Upcoming QC Questions for Monday Sept. 20th:
+# Upcoming QC Questions for Wedensday Sept. 22nd:
 > Topics: <br>
 > - [Servlets](#servlets)
 > - [AWS](#aws)
