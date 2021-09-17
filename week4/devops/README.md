@@ -1,4 +1,4 @@
-### AWS & DevOps Guides
+# AWS & DevOps Guides
 *Refer to the following guides to replicate the environments we set up in training.* 
 
 - Docker 🐳 [here](https://github.com/210823-Enterprise/demos/blob/main/week4/devops/docker.md)
