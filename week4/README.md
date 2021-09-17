@@ -3,9 +3,6 @@
 
 <br>
 
-### :star: Kanban Board for Week 4 Workflow [here](https://trello.com/b/o8Hhrzqo/week-4-workflow) 👈
-
-<br>
 ### AWS & DevOps Guides
 *Refer to the following guides to replicate the environments we set up in training.* 
 
@@ -17,3 +14,6 @@
 ### :star: Project 1 Requirements [here](https://github.com/210823-Enterprise/demos/blob/main/week4/project-1.md) 👈
 >***:clock2: Due Monday June 28th, 2021***
 
+<br>
+
+### :star: Kanban Board for Week 4 Workflow [here](https://trello.com/b/o8Hhrzqo/week-4-workflow) 👈
