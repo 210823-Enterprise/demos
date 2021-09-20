@@ -4,7 +4,7 @@
 <br>
 
 ## Topics to Review for 9/22 QC:
-- HTTP
+- [HTTP](https://github.com/210823-Enterprise/demos/blob/main/week4/http.md)
 - Servlets
 - DevOps: CI/CD
 - SDLC & Agile
