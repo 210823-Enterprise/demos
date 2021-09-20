@@ -12,7 +12,7 @@
 <br>
 
 ### :star: Project 1 Requirements [here](https://github.com/210823-Enterprise/demos/blob/main/week4/project-1.md) 👈
->***:clock2: Due Monday June 28th, 2021***
+>***:clock2: Due Monday September 27th, 2021***
 
 <br>
 
