@@ -17,3 +17,12 @@
 - [Docker](https://github.com/210823-Enterprise/demos/blob/main/week4/qc-questions.md#docker)
 - [SQL, JDBC & RDBMS](https://github.com/210823-Enterprise/demos/blob/main/week2/qc-questions.md)
 - [Advanced Java & Threads](https://github.com/210823-Enterprise/demos/blob/main/week3/README.md)
+
+<br>
+
+## Spring Notes found [here](https://github.com/210823-Enterprise/demos/edit/main/week5/notes) 👈
+- Spring Core
+- Spring IoC Container
+- Bean Wiring
+- Component Scanning
+- `ApplicationContext` vs. `BeanFactory`
