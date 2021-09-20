@@ -1,5 +1,6 @@
 # Upcoming QC Questions for Wedensday Sept. 22nd:
 > Topics: <br>
+> - Review this [HTTP Study Guide]()
 > - [Servlets](#servlets)
 > - [AWS](#aws)
 > - [DevOps/SDLC](#devops)
@@ -9,6 +10,10 @@
 
 <br>
 
+## HTTP
+
+
+<br>
 
 ## Servlets
 
