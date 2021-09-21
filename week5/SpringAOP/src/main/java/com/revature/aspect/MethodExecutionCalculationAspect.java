@@ -22,7 +22,7 @@ public class MethodExecutionCalculationAspect {
 	 */
 	
 	// Now this advice can only be applied to methods marked with @TrackTime 
-	@Around("com.revature.aspect.JoinPointCutConfig.trackTimeAnnotation()")
+	@Around("com.revature.aspect.JoinPointConfig.trackTimeAnnotation()")
 	public void around(ProceedingJoinPoint pJoinPoint) throws Throwable {
 		
 		// capture the start time of the method
