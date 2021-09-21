@@ -35,7 +35,7 @@ public class AfterAspect {
 		
 	}
 	
-	@After(value="com.revature.aspect.CommonJoinPointConfig.businessLayerExecution()")
+	@After(value="com.revature.aspect.CommonJConfig.businessLayerExecution()")
 	public void after(JoinPoint joinPoint) {
 		
 		logger.info("after execution of {}", joinPoint);

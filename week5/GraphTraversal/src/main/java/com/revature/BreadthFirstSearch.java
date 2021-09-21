@@ -9,8 +9,6 @@ import java.util.Queue;
  * We generate a queue to traverse through the graph
  * We put the first node into the queue
  * We repeatedly extract that node and put its neighbors into the queue.
- * 
- * @author SophieGavrila
  */
 public class BreadthFirstSearch {
 

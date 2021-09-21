@@ -9,6 +9,8 @@ import java.util.Arrays;
 import java.util.HashMap;
 
 /**
+ * .. This is not really fitting. It's rather an alternative to the metaModel.of() method 
+ * 
  * Class which constructs metamodels from annotated classes.
  */
 public class MetaConstructor {
