@@ -10,9 +10,7 @@ import java.util.Queue;
  * We put the first node into the queue
  * We repeatedly extract that node and put its neighbors into the queue.
  * 
- * 
  * @author SophieGavrila
- *
  */
 public class BreadthFirstSearch {
 
@@ -56,7 +54,6 @@ public class BreadthFirstSearch {
 	}
 	
 	
-	
 	public static void main(String[] args) {
 		
 		// Build a representation of the graph in the image
@@ -79,13 +76,9 @@ public class BreadthFirstSearch {
 		node60.addNeighbors(node70);
 		node50.addNeighbors(node70);
 		
-		
 		// instantiate the class in the main method and call the bfsExmaple() method
 		BreadthFirstSearch bfsExample = new BreadthFirstSearch();
 		
-		
 		bfsExample.bfs(node40);
-		
 	}
-	
 }
