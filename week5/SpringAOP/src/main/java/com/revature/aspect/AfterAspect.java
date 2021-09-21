@@ -27,7 +27,7 @@ public class AfterAspect {
 	// we use after typically to check a return value or to check if an exception has been thrown by a method
 	
 	@AfterThrowing( // 
-			value="com.revature.aspect.CommonPointCutConfig.businessLayerExecution()",
+			value="com.revature.aspect.CommonJoinPointConfig.businessLayerExecution()",
                    throwing="exception")
 	public void afterThrowing(JoinPoint joinPoint, Object exception) {
 	
@@ -35,7 +35,7 @@ public class AfterAspect {
 		
 	}
 	
-	@After(value="com.revature.aspect.CommonPointCutConfig.businessLayerExecution()")
+	@After(value="com.revature.aspect.CommonJoinPointConfig.businessLayerExecution()")
 	public void after(JoinPoint joinPoint) {
 		
 		logger.info("after execution of {}", joinPoint);

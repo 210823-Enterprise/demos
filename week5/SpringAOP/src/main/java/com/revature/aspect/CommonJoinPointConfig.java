@@ -14,7 +14,7 @@ public class CommonJoinPointConfig {
 	@Pointcut("execution(* com.revature.data.*.*(..))")
 	public void dataLayerExecution() {}
 	
-	@Pointcut("com.revature.aspect.CommonJoinPointConfig.dataLayerExecution() && com.revature.aspect.CommonJoinPointCutConfig.businessLayerExecution()")
+	@Pointcut("com.revature.aspect.CommonJoinPointConfig.dataLayerExecution() && com.revature.aspect.CommonJoinPointConfig.businessLayerExecution()")
 	public void allLayerExecution() {}
 	
 	// intercept point cuts based on Bean names
