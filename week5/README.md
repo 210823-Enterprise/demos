@@ -26,3 +26,5 @@
 - Bean Wiring
 - Component Scanning
 - `ApplicationContext` vs. `BeanFactory`
+- Spring ORM
+- Spring MVC
