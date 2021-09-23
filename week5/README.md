@@ -2,7 +2,7 @@
 <br>
 
 ## QC on Tuesday Sept. 28th
-*QC Questions on Spring [here](https://github.com/210823-Enterprise/demos/blob/main/week5/qc-questions.md)*
+*QC Questions on Spring & REST [here](https://github.com/210823-Enterprise/demos/blob/main/week5/qc-questions.md)*
 
 <br>
 
