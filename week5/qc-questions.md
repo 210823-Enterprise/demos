@@ -1,5 +1,5 @@
 # Spring QC Questions
-*These will be asked on **Tuesday Sept. 28th***
+*The questions belolw will be asked on **Tuesday Sept. 28th***.  Here are some resources:
 
 - :star: Watch this YouTube video: 📹 [*What is Spring Really About?*](https://www.youtube.com/watch?v=gq4S-ovWVlM)
 
