@@ -3,6 +3,8 @@
 
 > Watch [this video on Spring Framework for a brief overview!](https://www.youtube.com/watch?v=gq4S-ovWVlM&ab_channel=JavaBrains)
 
+<br>
+
 ### Spring Core
 
 1.  What are Spring Projects and Spring Modules?
@@ -33,6 +35,7 @@
     
 14.  What is Spring Expression Language? What can you reference using SpEL? What is the difference between $ and # in @value expressions?
     
+<br>
 
 ### Spring MVC
 
@@ -62,6 +65,7 @@
     
 27.  What are the advantages of using RestTemplate?
     
+<br>
 
 ### Spring AOP
 
@@ -71,8 +75,6 @@
     - The crosscutting concern is a concern which is applicable throughout the application and it affects the entire application.
     - For example: logging, security and data transfer are the concerns which are needed in almost every module of an application, hence they are cross-cutting concerns.
 
-    <img src ="https://i.stack.imgur.com/0xO3n.jpg" width="200px" />
-    
 30.  Define the following:
     
 
@@ -89,6 +91,7 @@
     
 34.  What visibility must Spring bean methods have to be proxied using Spring AOP?
     
+<br>
 
 ### Spring Data
 
@@ -112,6 +115,7 @@
     
 43.  What is @Query used for?
     
+<br>
 
 ### Spring Boot
 
