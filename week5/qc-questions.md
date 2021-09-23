@@ -68,6 +68,10 @@
 28.  What is “aspect-oriented programming”? Define an aspect.
     
 29.  Give an example of a cross-cutting concern you could use AOP to address
+    - The crosscutting concern is a concern which is applicable throughout the application and it affects the entire application.
+    - For example: logging, security and data transfer are the concerns which are needed in almost every module of an application, hence they are cross-cutting concerns.
+
+    <img src ="https://i.stack.imgur.com/0xO3n.jpg" width="200px" />
     
 30.  Define the following:
     
