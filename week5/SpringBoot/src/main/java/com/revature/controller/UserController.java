@@ -41,7 +41,7 @@ public class UserController {
 	
 	// GET request that reads the id from the query parameter
 	@GetMapping("/{id}") // if I send a get request to http://localhost:8090/api/users/5, it will capture 5 and search the User table for it
-	public ResponseEntity<User> getUserById(@PathVariable int id) {
+	public ResponseEntity<User> getUserById(@PathVariable("id") int id) {
 		
 		// call the service method, pass the captured id through, and returnit as a reposne entity with 200 OK status
 		return ResponseEntity.ok(userService.findById(id));
@@ -50,7 +50,7 @@ public class UserController {
 
 	// Create a method that fetches the path variable for finding a user by their username (Get request)
 	@GetMapping("/{username}") // if I send a get request to http://localhost:8090/api/users/5, it will capture 5 and search the User table for it
-	public ResponseEntity<User> getUserByUsername(@PathVariable String username) {
+	public ResponseEntity<User> getUserByUsername(@PathVariable("username") String username) {
 		
 		// call the service method, pass the captured id through, and returning as a response entity with 200 OK status
 		return ResponseEntity.ok(userService.findByUsername(username));
@@ -58,27 +58,9 @@ public class UserController {
 	
 	@PostMapping("/add")			// The Valid annotation makes sure that the User must compy with the resttrictions we set in the model
 	public ResponseEntity<User> addUser(@Valid @RequestBody User u) {  // we're taking in the User object in the HTTP RequestBody so we must 
-															  	// use the @RequestBody annotation for the parameter
+															  		    // use the @RequestBody annotation for the parameter
 		return ResponseEntity.ok(userService.insert(u));
 		
-	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	}	
 
 }
