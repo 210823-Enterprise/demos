@@ -10,6 +10,13 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 
 import lombok.Data;
 
+/**
+ * 
+ * This class is designed to represent information about an HTTP Error.
+ * The structure of this class can be serialized into JSON and sent
+ * back to the client about what went wrong.
+ *
+ */
 @Data // all getters and setters
 public class ApiError {
 	
@@ -22,7 +29,7 @@ public class ApiError {
 	
 	private String message;
 	private String debugMessage;
-	// Theremight be sub errrors (we'll create a class from this)
+	// There might be sub errrors (we'll create a class from this to represent ApiVlaidation Errors)
 	List<ApiSubError> subErrors = new ArrayList<>();
 	
 
