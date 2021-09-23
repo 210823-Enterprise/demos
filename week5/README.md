@@ -1,22 +1,20 @@
-# Week 5: Spring
+# Week 5: REST & Spring 🍃
 <br>
 
-
-
-## QC on Wedneday 9/22
-> *On Wednesday Sept. 22nd, you will be asked a few questions picked from Weeks 2, 3, & 4.  You can find a list of Week 4 QC questions <br> 
-> [here](https://github.com/210823-Enterprise/demos/blob/main/week4/qc-questions.md) 👈 along with the links to weeks 2 & 3.* <br>
+## QC on Tuesday Sept. 28th
+*QC Questions on Spring & REST [here](https://github.com/210823-Enterprise/demos/blob/main/week5/qc-questions.md)*
 
 <br>
 
-## Topics to Review for 9/22 QC:
-- [HTTP](https://github.com/210823-Enterprise/demos/blob/main/week4/http.md)
-- [Servlets](https://github.com/210823-Enterprise/demos/blob/main/week4/qc-questions.md#servlets)
-- [DevOps: CI/CD](https://github.com/210823-Enterprise/demos/blob/main/week4/qc-questions.md#aws)
-- [SDLC & Agile](https://github.com/210823-Enterprise/demos/blob/main/week4/qc-questions.md#devops)
-- [Docker](https://github.com/210823-Enterprise/demos/blob/main/week4/qc-questions.md#docker)
-- [SQL, JDBC & RDBMS](https://github.com/210823-Enterprise/demos/blob/main/week2/qc-questions.md)
-- [Advanced Java & Threads](https://github.com/210823-Enterprise/demos/blob/main/week3/README.md)
+## Resources 🔍
+- :star: Watch this YouTube video: 📹 [*What is Spring Really About?*](https://www.youtube.com/watch?v=gq4S-ovWVlM)
+
+- :star: Watch this YouTube video 📹 on [*The Basics of Dependency Injection*](https://www.youtube.com/watch?v=GB8k2-Egfv0)
+
+- :star: Study [Spring Overview](https://www.javatpoint.com/spring-tutorial)
+  - *What are the benefits of Spring?* 
+
+- :star: Study the [Spring `IoC` Container](https://docs.spring.io/spring-framework/docs/3.2.x/spring-framework-reference/html/beans.html) (this is heavy documetnation, so try to absorb the top points, not the whole doc)
 
 <br>
 
@@ -26,3 +24,5 @@
 - Bean Wiring
 - Component Scanning
 - `ApplicationContext` vs. `BeanFactory`
+- Spring ORM
+- Spring MVC
