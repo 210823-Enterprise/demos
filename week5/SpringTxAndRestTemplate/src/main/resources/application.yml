@@ -1,0 +1,27 @@
+# server set up
+server:
+  port: 5000 # Elastic Beanstalk expects Spring Java Apps to be deployed on port 5000
+  
+spring:
+  # Basic info about the application  application:    name: "food-api"
+  
+  h2:
+    console:      enabled: true
+      path: /h2
+  
+  #Data Source creds:
+  datasource:    url: jdbc:h2:mem:testdb
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: sa
+    
+  # JPA settings
+  jpa:    database-platform: org.hibernate.dialect.H2Dialect
+    show-sql: true
+    hibernate:      ddl-auto: create
+      
+# Spring Boot Actuator Configurations
+management:  endpoints:    web:      exposure:        include: "*" # DO NOT EXPOSE ALL ACTUATOR ENDPOINTS IN PRODUCTION
+    
+  
+  
