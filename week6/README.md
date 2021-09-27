@@ -7,7 +7,7 @@ JavaScript is dense.  **[Here are more questions to study](https://github.com/21
 
 <br>
 
-# Week 8: HTML/CSS/JavaScript
+# Week 6: HTML/CSS/JavaScript
 *These are the general topics that you should look into.  Refer to our class notes or [Google](https://www.google.com/) for continued study*
 
 ## HTML-CSS QC Questions 
