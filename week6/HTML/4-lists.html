@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lists</title>
+</head>
+
+<body>
+    <!--
+        HTML Lists
+            There are 3 different types of lists to choose from in HTML:
+
+            - Ordered Lists <ol>
+                + lists where each item <li> is numbered
+                    + 1, 2, 3
+                    + A, B, C
+                    + I, II, II
+                    + i, ii, iii
+
+            - Unordered Lists <ul>
+                + lists where each item <li> has some bullet point
+
+            - Definition Lists
+                + lists made up of terms <dt> and their definitions <dd>
+    -->
+    <div>
+        <h1>Homemade Hemp Milk</h1>
+        <h2>Ingredients</h2>
+
+        <!-- Declare an unordered list -->
+        <ul style="list-style-type: square"> <!-- Here we're implementing inline styling -->
+            <li>1/4 cup of raw unshelled hemp seeds</li>
+            <li>4 cups of water</li>
+            <li>1-2 tsp of Maple syrup</li>
+            <li>1/2 tsp of sea salt</li>
+        </ul>
+
+        <h2>Directions</h2>
+        <!--  ordered list -->
+        <ol type="I">
+            <li>Add all the ingredients to a blender.</li>
+                <ol type="a">
+                    <li>Turn the knob to a high setting!</li>
+                </ol>
+            <li>Blend on high for about 2 min</li>
+            <li>Store in fridge for up to 5 days</li>
+            <blockquote>
+                If you let it sit for more than 5 days it will go <strong>BAD</strong>.
+            </blockquote>
+        </ol>
+
+        <!-- Definition List -->
+        <dl>
+            <dt>Definition List</dt>
+            <dd>A list made up of terms and their definitions.</dd>
+
+            <dt>HyperText Markup Language</dt>
+            <dd>A markup languge for structuring content on a webpage.</dd>
+        </dl>
+
+        <ol type="1" reversed start="10">
+            <li>Thing 1</li>
+            <li>Thing 1</li>
+            <li>Thing 1</li>
+        </ol>
+    </div>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
