@@ -1,8 +1,3 @@
-# 🛑 🛑 🛑 READ THIS FIRST 🛑 🛑 🛑
-Below are a list of **HTML, CSS,** and **JavaScript** questions. <br>
-I highly reccomend you study ***each and every question on this page plus the following resource:*** <br>
-
-
 > Check out this [JavaScript Cheatsheet](https://github.com/mbeaudru/modern-js-cheatsheet) for more resources.<br>
 
 <br>
