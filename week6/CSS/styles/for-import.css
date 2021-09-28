@@ -1,0 +1,10 @@
+h1 {
+
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: darkmagenta;
+
+}
+
+/**
+I can import these CSS rules into another external stylesheet
+**/

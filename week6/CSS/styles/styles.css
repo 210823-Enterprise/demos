@@ -1,0 +1,13 @@
+@import url('for-import.css');
+
+body {
+    background-color: rgb(109, 97, 156);
+}
+
+#my-special-div {
+
+    /** Anything written here would be overwritten by an internal or inline styling rule
+    **/
+    background-color: aquamarine;
+
+}

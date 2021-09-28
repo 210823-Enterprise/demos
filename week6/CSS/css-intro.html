@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Cascading Style Sheets</title>
+
+    <!--  Within the head of an html doc, you can add a link to some external style sheet -->
+    <!-- AND/OR you can incorporate an internal <style> tag dictating the stying of the entire page -->
+    <style>
+        /**
+            This is how you comment in CSS
+        */
+        body {
+            font-family: 'Indie Flower', cursive;
+            margin: 50px;
+            max-width: 800px;
+        }
+
+        p {
+            font-weight: 800;
+        }
+
+        #my-special-div {
+
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            padding-left: 30%;
+            border: 2px aqua;
+            color: lime;
+            background-color: black;
+
+        }
+
+        .my-special-class {
+
+            margin-top: 20%;
+            border:dashed rebeccapurple;
+            border-radius: 20px;
+            line-height: 18px;
+
+        }
+    </style>
+
+    <link rel="stylesheet" href="styles/styles.css">
+
+</head>
+
+<body>
+
+    <h1>Intro to CSS</h1>
+
+    <p>
+        <abbr title="Cascading Style Sheets">CSS</abbr> can be included in 3 different ways:
+
+    <ol>
+        <li>Inline Styling with the <code>style</code>attribute</li>
+        <!-- IMPPORTANT! Inline styling always takes precedence -->
+        <li>Internal Styling using the <code>style</code>tag in the <code>head</code> of an html doc.</li>
+        <li>External Styling using the <code>link</code> element in the head of an html doc.</li>
+    </ol>
+    </p>
+
+    <div>
+        <h4>CSS rules are defined by key/value pairs, separated by a colon { : }</h4>
+        <p style="color:lightcoral">This is an example of the color rule</p>
+        <span style="background-color: aqua; color: blanchedalmond;">Some more text to demonstrate inline
+            styling.</span>
+
+        <p>The above is an example of inline styling; the following is an example of internal styling:</p>
+    </div>
+
+    <div>
+        <h2>Selectors</h2>
+
+        <h3>Classes &amp; ID's</h3>
+
+        <div id="my-special-div">
+            <p>Here's a bunch of text identified by 1 id</p>
+            <p>Some more text here</p>
+        </div>
+
+        <div class="my-special-class">
+            <p>This belongs to a class labeled as <code>my-special-class</code></p>
+        </div>
+
+        <div class="my-special-class">
+            <p>Some more text belonging to a class</p>
+        </div>
+
+
+    </div>
+
+
+</body>
+
+</html>
