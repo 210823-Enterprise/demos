@@ -9,7 +9,7 @@ function addStudent() {
     let majorField = document.getElementById('student-major').value;
 
     // 2. check that they're truthy!
-    if (!!nameField && !!majorField) {
+    if (nameField && majorField) { // if statement automatically checks for truthy/falsey (so no need for the !! operator)
 
         // 3. Create a row element
         let row = document.createElement('tr'); // tr is html for a table row element
@@ -20,7 +20,6 @@ function addStudent() {
         let nameCell = document.createElement('td');
         // 6. Create a table cell element for the Major
         let majorCell = document.createElement('td');
-
         // 7. append the cells to the row
         row.appendChild(idCell);
         row.appendChild(nameCell);
@@ -37,12 +36,11 @@ function addStudent() {
         // 10. clear out the input tfor the fields so that furture input can be provided
         document.getElementById('student-name').value = '';
         document.getElementById('student-major').value = '';
-
     }
 }
 
 let counter = 1;
-// generator functions introdue in ES6 
+// generator functions introduced in ES6 
 function* idGenerator() {
     yield counter++;
 }
