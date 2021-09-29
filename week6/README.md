@@ -5,6 +5,19 @@
 # Week 6: HTML/CSS/JavaScript
 *These are the general topics that you should look into.  Refer to our class notes or [Google](https://www.google.com/) for continued study*
 
+<br>
+
+## `Wednesday`
+- ⭐ Build a Binary Calculator with HTML/CSS/JS [here](https://www.hackerrank.com/challenges/js10-binary-calculator?h_r=internal-search)
+- ⭐ Complete [this HackerRank contest](www.hackerrank.com/210823-enterprise-hrjs)
+- ⭐ Practice the JavaScript basics [here](https://www.codecademy.com/courses/introduction-to-javascript/lessons/introduction-to-javascript/exercises/intro)
+
+
+
+<br>
+
+<br>
+
 ## HTML-CSS QC Questions 
 
 1. What is HTML
