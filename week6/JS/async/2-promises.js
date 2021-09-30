@@ -48,10 +48,10 @@ function getServiceCost(services, callback) {
 }
 
 // chain
-
 getUser(103)
     .then(getServices)
     .then(getServiceCost)
     .then(console.log);
+
 
 
