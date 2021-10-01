@@ -11,6 +11,7 @@ To learn more, here is a great article about what SonarCloud does called [Improv
 - [Step 2: Configure SonarCloud](#Step-2-Configure-SonarCloud)
 - [Step 3: Setup GitHub Actions](#Step-3-Setup-GitHub-Actions)
 
+<br>
 
 ## Step 1: Link your Source code to a GitHub Repository
 1. Have your source code open in your editor.  You will connect it to a remote repository.
