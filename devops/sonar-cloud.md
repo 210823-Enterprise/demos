@@ -1,5 +1,7 @@
 # How to Set up SonarCloud
 
+- [Step 1: Link Source Code to GitHub Repository](#Step-1-Link-your-Source-code-to-a-GitHub-Repository)
+
 ## Step 1: Link your Source code to a GitHub Repository
 1. Have your source code open in your editor.  You will connect it to a remote repository.
 
