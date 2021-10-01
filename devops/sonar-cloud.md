@@ -1,6 +1,13 @@
 # How to Set up SonarCloud
+***SonarCloud** SonarCloud is the leading online service to catch Bugs and Security Vulnerabilities in your Pull Requests and throughout your code repositories.* <br>
+
+Here is a great article about what SonarCloud does called [**Improving Code Quality with SonarCloud](https://medium.com/sevensenders-techblog/improving-code-quality-with-sonarcloud-cc3e2faeb89**)
+
 
 - [Step 1: Link Source Code to GitHub Repository](#Step-1-Link-your-Source-code-to-a-GitHub-Repository)
+- [Step 2: Configure SonarCloud](#Step-2-Configure-SonarCloud)
+- [Step 3: Setup GitHub Actions](#Step-3-Setup-GitHub-Actions)
+
 
 ## Step 1: Link your Source code to a GitHub Repository
 1. Have your source code open in your editor.  You will connect it to a remote repository.
