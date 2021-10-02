@@ -156,7 +156,17 @@ artifacts:
 
 <br>
 
-7. 
+7. You will be brought back to the AWS popup window after you've clicked **Save** in the repository access page. There will be a number referencing the connection you just configured.  Click **Connect**.
+
+8. You should see a message saying you're "Ready to connect".  Add the **Repository name** and `main` **branch**. These should be available as an option to select.
+
+9. Under, **Change detection options** make sure that ***Start the pipeline on source code change*** is checked. 
+
+<img src="imgs/conn.png" />
+
+> *Whenever you **Continuously Integrate** (push code to the main branch, or accept a Pull Request from a separate branch into `main` of your repository), the CodePipeline will be triggered to rebuild, test, and deploy your app whenever there's a change in the source code.*
+
+<br>
 
 ## Step 4: <a name="step4"></a>
 
