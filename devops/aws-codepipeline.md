@@ -70,7 +70,7 @@ services:
 
 <br>
 
-> ***How is the `docker-compose.yml` file used?*** *The Compose file defines your services by providing a way to document and configure all of the application's service dependencies (databases, queues, caches, web service APIs, etc).  Currently we only have one, without additional services like a postgres databse. The `api_service` (your app)  uses an image that’s built from the `Dockerfile` in the current directory. It then binds the container and the host machine to the exposed port, 5000*
+> ***How is the `docker-compose.yml` file used?*** *The Compose file defines your services by providing a way to document and configure all of the application's service dependencies (databases, queues, caches, web service APIs, etc).  Currently we only have one, without additional services like a postgres databse. The `api_service` (your app)  uses an image that’s built from the `Dockerfile` in the current directory. It then binds the container and the host machine to the exposed port, 5000.*
 
 <br>
 
@@ -100,7 +100,37 @@ artifacts:
 
 <br>
 
-## Step 2: <a name="step2"></a>
+## Step 2: Setup Deployment Environment in Elastic Beanstalk <a name="step2"></a>
+
+1. Go to your AWS **Management** Console and login. In the search bar, look for **Elastic Beanstalk**
+
+2. Click **Create Application**.
+
+<br>
+
+<img src="imgs/createapp.png" />
+
+<br>
+
+3. Give your application a name.
+
+4. Under **Platform**, choose **Docker**.
+
+5. Under **Application code**, choose **Sample application** > Click **Create application**.
+
+<br>
+
+<img src="imgs/platform.png" />
+
+<br>
+ 
+*This step will take a few minutes to set up.  You have just defined the deployment environment which is the last stage in the pipeline.  The deployed `JAR` running in the container created and run in the **build** stage of the CodePipeline will replace the sample application currently running in your Elastic Beanstalk environment.* <br>
+
+*Elastic Beanstalk is an easy way to let AWS configure your EC2 instances in which the app will be deployed, and easily auto-scale your resources.*
+
+<br>
+
+
 
 
 
