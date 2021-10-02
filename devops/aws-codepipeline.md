@@ -130,11 +130,33 @@ artifacts:
 
 <br>
 
+## Step 3: Connect GitHub Repository to CodePipeline <a name="step3"></a>
 
+1. In the AWS search bar, search for **CodePipeline**. Click **Create pipeline**.
 
+2. Give the pipeline a name, and click next (let it create a New service role for you).
 
+<br>
 
-## Step 3: <a name="step3"></a>
+<img src="imgs/pname.png" />
+
+<br>
+
+3. **Add source stage:** Under Source provide, click **Github (Version 2)**.
+
+4. Under **Connection** click **Connect to GitHub** > give the connection a name and click **Connect to GitHub** again in the box that pops up.
+
+5. Click **Install a new app**, this will take you to a GitHub installer for AWS Connector.  Click on your username/organization and click **Configure**.
+
+6. In the Repository access page, click **Only select repositories** and select your recently publiched repository containing your source code.
+
+<br>
+
+<img src="imgs/connector.png" />
+
+<br>
+
+7. 
 
 ## Step 4: <a name="step4"></a>
 
