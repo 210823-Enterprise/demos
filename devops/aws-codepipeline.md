@@ -77,7 +77,7 @@ services:
 3. Richt click on your project and create one more file named `buildspec.yml` within the project root directory. Paste the following within:
 
 ```yml
-version: 1.2
+version: 0.2
 
 phases:
   build:
@@ -181,7 +181,7 @@ artifacts:
 5. Under **Operating system** click *Amazon Linux 2* > **Runtime(s)** should be *Standard*.
 
 6. Under **Image** click `aws/codebuild/amazonlinux2-aarch64-standard:1.0` 
-    > *This is a Docker image that defines the Linux 2 environemnt. If you're interested, you can find the actual Dockerfile that this image is built from [here](https://github.com/aws/aws-codebuild-docker-images/blob/master/al2/aarch64/standard/1.0/Dockerfile)*
+    > *This is a Docker image that defines the Linux 2 environemnt. If you're interested, you can find the actual Dockerfile that this image is built from [here](https://github.com/aws/aws-codebuild-docker-images/blob/master/al2/aarch64/standard/1.0/Dockerfile), or go [here](https://docs.aws.amazon.com/codebuild/latest/userguide/build-env-ref-available.html) to the AWS documentation to learn more about these images.*
 
 7. :exclamation: Under **Privileged**, make sure you check the box to give your builds "elevated priveleges" to build their own Docker images.
 
