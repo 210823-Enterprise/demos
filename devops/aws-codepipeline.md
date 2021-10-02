@@ -92,7 +92,7 @@ artifacts:
 
 <br>
 
-> ***How is the `buildspec.yml` file used?*** *During the **build** phase of our CodePipeline, AWS CodeBuild will read from this file and execute the steps we've outlined in the `build` phase: first displaying the version of java to the logs, then running `mvn clean package` to generate the `JAR` file which will be handed off to Elastic Beanstalk and run within a Docker container in the deployment phase.*
+> ***How is the `buildspec.yml` file used?*** *You can read all about why this `buildspec` file is written the way it is [here](https://docs.aws.amazon.com/codebuild/latest/userguide/getting-started-cli-create-build-spec.html) :point_left: . During the **build** phase of our CodePipeline, AWS CodeBuild will read from this file and execute the steps we've outlined in the `build` phase: first displaying the version of java to the logs, then running `mvn clean package` to generate the `JAR` file which will be handed off to Elastic Beanstalk and run within a Docker container in the deployment phase.*
 
 <br>
 
