@@ -130,7 +130,7 @@ artifacts:
 
 <br>
 
-## Step 3: Connect GitHub Repository to CodePipeline <a name="step3"></a>
+## Step 3: Add Source stage - Connect GitHub Repository to CodePipeline <a name="step3"></a>
 
 1. In the AWS search bar, search for **CodePipeline**. Click **Create pipeline**.
 
@@ -160,7 +160,7 @@ artifacts:
 
 8. You should see a message saying you're "Ready to connect".  Add the **Repository name** and `main` **branch**. These should be available as an option to select.
 
-9. Under, **Change detection options** make sure that ***Start the pipeline on source code change*** is checked. 
+9. Under, **Change detection options** make sure that ***Start the pipeline on source code change*** is checked. Click Next.
 
 <img src="imgs/conn.png" />
 
@@ -168,6 +168,8 @@ artifacts:
 
 <br>
 
-## Step 4: <a name="step4"></a>
+## Step 4: Add Build stage - Setup AWS CodeBuild Project <a name="step4"></a>
+
+1. 
 
 ## Step 5: <a name="step5"></a>
