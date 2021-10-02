@@ -170,6 +170,39 @@ artifacts:
 
 ## Step 4: Add Build stage - Setup AWS CodeBuild Project <a name="step4"></a>
 
-1. 
+1. Under **Build provider**, choose **AWS CodeBuild**.
 
-## Step 5: <a name="step5"></a>
+2. Under **Project name**, click **Create project**.  This will make a window pop up to configure the build job.
+
+3. Enter a project name > make sure the box next to **Restrict number of concurrent builds this project can start** is *checked*, and **Concurrent build limit** is set to 1.
+
+4. Under **Environment image**, click *Managed image*.
+
+5. Under **Operating system** click *Amazon Linux 2* > **Runtime(s)** should be *Standard*.
+
+6. Under **Image** click `aws/codebuild/amazonlinux2-aarch64-standard:1.0` 
+    > *This is a Docker image that defines the Linux 2 environemnt. If you're interested, you can find the actual Dockerfile that this image is built from [here](https://github.com/aws/aws-codebuild-docker-images/blob/master/al2/aarch64/standard/1.0/Dockerfile)*
+
+7. :exclamation: Under **Privileged**, make sure you check the box to give your builds "elevated priveleges" to build their own Docker images.
+
+8. Scroll down to **Buildspec** > Check *Use a buildspec file* > Under **Buildspec name** write `buildspec.yml`.
+
+<br>
+
+<img src="imgs/spec.png" />
+
+<br>
+
+9.  Scroll down to **Logs** (this is where the logs of your build sill be stored) > give a name for both *Group name* and *Stream name*.
+
+10. Click **Continue to CodePipeline**. You'll be brought back to the Add build stage page with a message that says *Successfully created <your-build-project> in CodeBuild* > Make sure the **Build type** is set to *Single build* and click **Next**.
+
+<br>
+
+## Step 5: Add Deploy Stage - Commit, Build Deploy! <a name="step5"></a>
+
+1. Under **Deploy Provider**, select *AWS ELastic Beanstalk*.
+
+2. Select the *Application Name* of the app you set up in [Step 2](#step2) > Select the corresponding *Environment name* in the next box
+
+3. Click **Next**.  You will be shown a summary of your CodePipeline.  Scroll to the bottom and click **Create pipeline**.
