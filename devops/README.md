@@ -1,4 +1,4 @@
-# How to Setup SonarCloud & CI/CD for a Spring Boot App
+# How to Setup SonarCloud & CI/CD Pipeline for a Spring Boot App
 *The purpose of this directory is to provide step-by-step guides to set up **Sonar Cloud** and an **AWS CodePipeline** to facilitate CI/CD.  You can emulate these same steps to analyze and deploy your own application.*
 
 
