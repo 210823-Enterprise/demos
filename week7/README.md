@@ -1,5 +1,6 @@
 
 # Angular Study Guide
+*Angular Week 7 QC Questions [here](https://github.com/210823-Enterprise/demos/edit/main/week7/angular-qc-questions.md)*
 
 
 #### But first, What's a framework?
