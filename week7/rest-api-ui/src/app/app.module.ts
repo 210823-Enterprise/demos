@@ -9,7 +9,7 @@ import { RegisterComponent } from './components/register/register.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
-  declarations: [
+  declarations: [ // ng g c main -> automatically puts it in here
     AppComponent,
     NavComponent,
     MainComponent,

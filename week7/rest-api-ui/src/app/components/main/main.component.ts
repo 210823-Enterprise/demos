@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainComponent implements OnInit {
 
+  title = 'User Portal'; 
+  image = 'assets/network.png'
+
   constructor() { }
 
+  // Angular lifecycle hook
   ngOnInit(): void {
+
+    // we can provide special functionality here that will be called when the compoenent 
   }
 
 }
