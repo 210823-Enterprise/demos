@@ -3,6 +3,7 @@
  */
 export class User {
 
+    id: number;
     firstName: string;
     lastName: string;
     username: string;
@@ -10,7 +11,8 @@ export class User {
     email: string;
     addresses: any[];
 
-    constructor(firstName: string, lastName: string, username: string, password: string, email: string, addresses:any[]) {
+    constructor(id: number, firstName: string, lastName: string, username: string, password: string, email: string, addresses:any[]) {
+        this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
         this.username = username;

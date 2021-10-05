@@ -21,7 +21,7 @@ export class UserService { // this service is only responsible for one thing: ma
 
   // we need to append Headers to all requests
   httpOptions = {
-    headers: new HttpHeaders({'Content-Type': 'application/json'})
+    headers: new HttpHeaders({ 'Content-Type': 'application/json' })
   }
 
   // POST
@@ -36,6 +36,32 @@ export class UserService { // this service is only responsible for one thing: ma
   }
 
   // GET
+  public findAllUsers(): Observable<User[]> {  // An Observable  is a stream of values that wil be returned at over
+    // send a get request and return a collection of User objects
+    return this.http.get<User[]>(url) // by default a fetch request is asynchronous
+      .pipe(
+        catchError(this.handleError) // in our component, we subscribe to the observable that htis returns
+      )
+  }
+
+  // GET -> pass a Path Variable as parameter
+  public findById(id: number): Observable<User> { // http header, status code, http response body
+
+    return this.http.get<User>(`${url}/${id}`) // http://---host---:5000/api/users/{id}
+      .pipe(
+        catchError(this.handleError)
+      )
+  }
+
+  public findByUsername(username: string): Observable<User> {
+
+    return this.http.get<User>(`${url}/find/${username}`)
+      .pipe(
+        catchError(this.handleError)
+      )
+
+  }
+
 
   // DELETE
 

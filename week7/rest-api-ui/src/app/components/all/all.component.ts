@@ -25,12 +25,11 @@ export class AllComponent implements OnInit {
 
     // we will call the below method to load all User objects from the DB INTO the users[] of this component
     this.findAllUsers();
-
   }
 
   public findAllUsers() {
 
-    this.userService.findAllUsers()
+    this.userService.findAllUsers() // every object that is captured from the observabel is set as our users array
       .subscribe(data => this.users = data) // this defines what we do with the data returned from the observable
 
   }
