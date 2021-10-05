@@ -115,7 +115,13 @@
                     <input type="text" class="form-control" id="inputZip">
                 </div>
             </div>
-            <button type="submit" class="btn btn-primary" (click)="testUserObj()">Sign in</button>
+            <button type="submit" class="btn btn-primary" (click)="registerUser()">Register</button>
+
+            <!--  first check DO we have a client message that's either positive or negative?
+                  THEN we populate the view with the alert  -->
+            <div *ngIf="clientMessage.message.length > 0" class="alert alert-success" role="alert">
+                {{ clientMessage.message }} 
+            </div> <!--*ngIf checks for a condition before displaying the element-->
         </form>
 
     </div>

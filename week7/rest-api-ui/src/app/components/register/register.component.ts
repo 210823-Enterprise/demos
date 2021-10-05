@@ -1,3 +1,5 @@
+import { ClientMessage } from './../../models/client-message';
+import { UserService } from './../../services/user.service';
 import { User, Address } from './../../models/user';
 import { Component, OnInit } from '@angular/core';
 
@@ -13,21 +15,23 @@ export class RegisterComponent {
   // public, private, protected
   public user = new User('', '', '', '', '', [])
   public address = new Address('', '', '', '')
+  public clientMessage = new ClientMessage('');
 
-  constructor() { } // HttpClientModule
+  // inject the UserService into this component
+  constructor(private userService: UserService) { }
 
-  // void is the return type (like Java)
-  public testUserObj(): void {
-
-    // after we've bound the input proerties to the User and Addres properties of the component, 
-    // we print it to the console
-    
-    // push the address to the User's address array:
+  public registerUser(): void {
+  
+    // push the address object captured into the User's address's []
     this.user.addresses.push(this.address);
-    console.log(this.user);
 
-    // TODO: Implement HTTP Service
-
+    // call this.userService.registerUser() method and post it
+    this.userService.registerUser(this.user)
+      .subscribe( // subscribe to the data returned and do something like generate client message
+        data => this.clientMessage.message = `Successfully inserted ${data.firstName}`,   // console.log(`successfully added ${data.firstName}`)
+        error => this.clientMessage.message = `Something went wrong. Error: ${error}` // console.error(`We got an error: ${error}` 
+      )
+      // TODO: if everything is successful, post an alert to be rendered in the view if we add successfully
   }
 
 }
