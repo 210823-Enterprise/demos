@@ -8,6 +8,7 @@ import { MainComponent } from './components/main/main.component';
 import { RegisterComponent } from './components/register/register.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule } from '@angular/forms'; // built in library where we get ngModel directive from
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [ // ng g c main -> automatically puts it in here
@@ -20,7 +21,8 @@ import { FormsModule } from '@angular/forms'; // built in library where we get n
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

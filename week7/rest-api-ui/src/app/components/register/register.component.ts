@@ -26,6 +26,8 @@ export class RegisterComponent {
     this.user.addresses.push(this.address);
     console.log(this.user);
 
+    // TODO: Implement HTTP Service
+
   }
 
 }
