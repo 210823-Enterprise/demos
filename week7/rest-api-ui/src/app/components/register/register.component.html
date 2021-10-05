@@ -117,7 +117,7 @@
             </div>
             <button type="submit" class="btn btn-primary" (click)="registerUser()">Register</button>
 
-            <!--  first check DO we have a client message that's either positive or negative?
+            <!--  SRUCTURAL DIRECTIVE first check DO we have a client message that's either positive or negative?
                   THEN we populate the view with the alert  -->
             <div *ngIf="clientMessage.message.length > 0" class="alert alert-success" role="alert">
                 {{ clientMessage.message }} 

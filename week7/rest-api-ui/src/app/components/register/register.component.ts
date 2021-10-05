@@ -13,7 +13,7 @@ export class RegisterComponent {
   title = 'Register User';
 
   // public, private, protected
-  public user = new User('', '', '', '', '', [])
+  public user = new User(0,'', '', '', '', '', [])
   public address = new Address('', '', '', '')
   public clientMessage = new ClientMessage('');
 
