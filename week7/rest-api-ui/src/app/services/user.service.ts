@@ -62,7 +62,6 @@ export class UserService { // this service is only responsible for one thing: ma
       .pipe(
         catchError(this.handleError)
       )
-
   }
 
   // DELETE
@@ -88,7 +87,6 @@ export class UserService { // this service is only responsible for one thing: ma
     }
     // throwError is an Observable from rxJS
     return throwError('Something bad happened; please try again later')
-
   }
 
 }

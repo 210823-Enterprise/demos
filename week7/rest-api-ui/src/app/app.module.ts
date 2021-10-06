@@ -11,6 +11,7 @@ import { FormsModule } from '@angular/forms'; // built in library where we get n
 import { HttpClientModule } from '@angular/common/http';
 import { AllComponent } from './components/all/all.component';
 import { FindComponent } from './components/find/find.component';
+import { RemoveComponent } from './components/remove/remove.component';
 
 // ANgular is MODULAR! organizes views and functionality in different files/directorys
 // when we ng server the app, the webpack traverses our application an identifies dependencies
@@ -23,7 +24,8 @@ import { FindComponent } from './components/find/find.component';
     MainComponent,
     RegisterComponent,
     AllComponent,
-    FindComponent
+    FindComponent,
+    RemoveComponent
   ],
   imports: [ // defines libraries that are accessible to component within our app
     BrowserModule,

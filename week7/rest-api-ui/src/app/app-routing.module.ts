@@ -1,3 +1,4 @@
+import { RemoveComponent } from './components/remove/remove.component';
 import { AllComponent } from './components/all/all.component';
 import { RegisterComponent } from './components/register/register.component';
 import { MainComponent } from './components/main/main.component';
@@ -13,6 +14,7 @@ const routes: Routes = [
   { path: 'register', component: RegisterComponent},
   { path: 'all', component: AllComponent},
   { path: 'find', component: FindComponent},
+  { path: 'remove', component: RemoveComponent},
   { path: '**', component: MainComponent} // this is a Wild Card Route to handle HAS TO BE LAST
 
 ];
