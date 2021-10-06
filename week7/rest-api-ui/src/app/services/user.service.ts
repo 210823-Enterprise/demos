@@ -53,6 +53,9 @@ export class UserService { // this service is only responsible for one thing: ma
       )
   }
 
+  // GET - with path variable (this is like the findById() method above, but we've added /find as an addition to the endpoint)
+  // Why do we add the extra /find to the url? 
+  // If both methods hit the same @GetMapping in our Spring controller, then we would have an ambiguous handler conflict.
   public findByUsername(username: string): Observable<User> {
 
     return this.http.get<User>(`${url}/find/${username}`)
@@ -62,8 +65,12 @@ export class UserService { // this service is only responsible for one thing: ma
 
   }
 
-
   // DELETE
+  deleteUser(id: number) {
+    let deleteUrl = `${url}/${id}`
+    this.http.request('delete', deleteUrl).subscribe(console.log);
+    // note the slightly different format for the DELETE function
+  }
 
   // create a method called handleError which will be invoked if something goes wrong in our http requests
   private handleError(httpError: HttpErrorResponse) {
