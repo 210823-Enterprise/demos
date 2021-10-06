@@ -31,7 +31,6 @@ export class RegisterComponent {
         data => this.clientMessage.message = `Successfully registered ${data.firstName}`,   // console.log(`successfully added ${data.firstName}`)
         error => this.clientMessage.message = `Something went wrong. Error: ${error}` // console.error(`We got an error: ${error}` 
       )
-      // TODO: if everything is successful, post an alert to be rendered in the view if we add successfully
   }
 
 }
