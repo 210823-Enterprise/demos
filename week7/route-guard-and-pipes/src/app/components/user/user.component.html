@@ -1,0 +1,24 @@
+<h2>Users</h2>
+
+<span>{{ title | uppercase}}</span>
+
+<br>
+
+<span>{{ age | squarePipe}}</span>
+<!--  date, currency  - a ton of different Pipes from the Angular Library that you can use (or you can build custom ones) -->
+
+<br>
+
+
+<div *ngFor="let u of userService.users">
+
+    <!-- does getTheory(u.id) reutrtn anything at all? -->
+    <!-- <span>{{ u.name }}'s theory is {{ getTheory(u.id)?.title }} </span> ctrl + fwd / -->
+
+    <span>{{ u.name }}'s theory is {{ (u.id | theory)?.title }}</span>
+    <!-- theory calls the name of the custom Pipe we created as specified in its decorator -->
+    <!-- Now there are no more unessary calls based on the HostListener set up in the UserComponent class-->
+
+
+
+</div>
