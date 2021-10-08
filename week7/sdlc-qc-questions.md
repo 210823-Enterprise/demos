@@ -1,4 +1,4 @@
-# SDLC
+# SDLC QC Questions
 
 * What are the steps in the software development lifecycle?
     1. Planning / Requirements gathering
