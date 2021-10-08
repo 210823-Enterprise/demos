@@ -103,7 +103,13 @@ artifacts:
 
 </br>
 
-*If you click that link, you'll get a 404 error simply because we haven't uploaded anything to be hosted, especially not an `index.html` page.*
+10. **Add your Angular app's distributable files to the S3 bucket**:  
+    - Open a terminal within the root directory of your Angular app.
+    - Run: `ng build` > This will generate a `dist` folder
+    - Open the **Obects** section of your @3 bucket's dashboard > Click Upload
+    - In your file explorer click on your Angular app > `dist` > `your-angular-app-name` > copy all the files in there (about 7 - 8 should be in there) and upload them.
+
+*Go back to the S3 `Properties` page > scroll down to the bottom where there's a link to your site.  If you click that link, you'll see your app hosted.*
 
 <br>
 
