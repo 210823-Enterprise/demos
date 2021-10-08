@@ -1,3 +1,6 @@
+# This Dockerfile would only be used in the case that you are 
+# manually deploying this application to an EC2 hosted on AWS
+
 FROM node:12.16.1-alpine As builder
 
 WORKDIR /usr/src/app
