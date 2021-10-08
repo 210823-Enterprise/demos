@@ -10,7 +10,7 @@ const routes: Routes = [
 
   // all of these components will be rendered at url localhost:4200/x -> wherever the <routeroutlet> is placed
   { path: '', component: MainComponent },
-  { path: 'main', component: MainComponent },   // the path specifies http:/localhost:4200/main
+  { path: 'main', component: MainComponent },   // the path specifies http:/localhost:4200/b
   { path: 'register', component: RegisterComponent},
   { path: 'all', component: AllComponent},
   { path: 'find', component: FindComponent},
