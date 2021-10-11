@@ -233,7 +233,7 @@ services:
       - "8080:8080"
     networks:
       # specifying the common network shared among services mentioned at the bottom
-      - bank-network
+      - bank
     
   loans:
     image: sophiagavrila/loans:latest
@@ -241,7 +241,7 @@ services:
     ports:
       - "8090:8090"
     networks:
-      - bank-network
+      - bank
     
   cards:
     image: sophiagavrila/cards:latest
@@ -249,10 +249,10 @@ services:
     ports:
       - "9000:9000"
     networks:
-      - bank-network
+      - bank
 # Network is a root element which can be declared like services    
 networks:
-  bank-network:
+  bank
 ```
 
 <br>
