@@ -1,4 +1,4 @@
-# Microservices
+# Microservices QC Questions
 
 * Compare the microservice and monolithic architectures. What are the advantages / disadvantages of each?
 
@@ -7,7 +7,7 @@
     * Easier to deploy
     * Code can get messy, complex, tightly coupled
  
- * Microservices - application composed of independently deployed services
+  * Microservices - application composed of independently deployed services
     * Services governed by single responsibility principle
     * Enforces loose coupling of application
     * Complex to deploy and manage relative to monolith
