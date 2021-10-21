@@ -25,28 +25,25 @@ public class UserController {
 	@Autowired
 	private UserService userService;
 	
-	// find all
+	// returing a Set to prevent duplicates
 	@GetMapping
 	public ResponseEntity<Set<User>> findAll() {
 		return ResponseEntity.ok(userService.findAll());
 	}
 	
-	// find by username /{username} use @pathvariable as your parameter
 	@GetMapping("/{username}")
 	public ResponseEntity<User> findByUsername(@PathVariable("username") String username) {
 		return ResponseEntity.ok(userService.findByUsername(username));
 	}
 	
-    @GetMapping("/{id}")
-    public User getFood(@PathVariable int id) {
-        return userService.getById(id);
-    }
-	
-	// insert
+       @GetMapping("/{id}")
+       public User findByUserId(@PathVariable("id") int id) {
+	   	return userService.getById(id);
+       }	
+
 	@PostMapping("/add")
 	public ResponseEntity<User> insert(@Valid @RequestBody User u) {
 
 		return ResponseEntity.ok(userService.insert(u));
-		
 	} 
 }
