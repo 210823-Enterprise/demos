@@ -23,6 +23,8 @@ public interface UserDAO extends JpaRepository<User, Integer>{
 	
 	public Optional<User> findByUsername(String username);
 
+	public Optional<User> findById(int id);
+
 	// @Modifying  // I would use this if I intend for some method to manipulate and modify data in a DB
 	@Query(value= "FROM User WHERE email LIKE %:substr") // Note that I'm calling the Java properties and object name -> this is JPQL 
 	public List<User> findByEmailContains(String substr); // johnsmi -> reutrns johnsmith@gmail.com
