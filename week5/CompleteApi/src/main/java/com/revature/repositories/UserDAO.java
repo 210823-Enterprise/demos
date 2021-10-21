@@ -31,5 +31,7 @@ public interface UserDAO extends JpaRepository<User, Integer>{
 	
 	public List<User> findByOrderByLastName();
 	
+	public void deleteById(id);
+	
 	// basic CRUD methods inherited from CrudRepository save(), get(), update(), etc...
 }
