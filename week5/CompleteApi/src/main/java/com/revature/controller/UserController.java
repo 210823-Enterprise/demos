@@ -38,7 +38,7 @@ public class UserController {
 	
        @GetMapping("/{id}")
        public User findByUserId(@PathVariable("id") int id) {
-	   	return userService.getById(id);
+	   	return userService.findById(id);
        }	
 
 	@PostMapping("/add")
