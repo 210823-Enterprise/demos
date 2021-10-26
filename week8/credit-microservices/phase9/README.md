@@ -13,7 +13,7 @@ If you have hundreds of microservices running at once, it can be difficult to st
 ### *How do you introduce automated self-healing?*
 In the case that a service has something wrong with it, Kubernetes will automatically detect the failure and rollout a replacement container.
 
-### How do we auto scale our services
+### *How do we auto scale our services?*
 Kubernetes automates the process of monitoring our services and scaling them out (creating more instances) based on metrics like CPU utilization, etc.
 
 <br>
