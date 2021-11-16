@@ -33,4 +33,4 @@ It's worth noting that some lists are queues. Look at [**LinkedList**](https://d
 <br>
 
 ### After Demoing
-Complete this [Hackerrank Challenge](https://www.hackerrank.com/challenges/queue-using-two-stacks/problem)
+Complete this [Hackerrank Challenge](https://www.hackerrank.com/challenges/queue-using-two-stacks/problem) 👈
