@@ -1,7 +1,11 @@
 # Stacks
 A stack is an abstract, linear data type with a predefined capacity (or boundary). It follows a particular order for adding or removing elements. In this demo we create our own custom `SimpleStack` class to demonstrate the functionality of the `Stack` class within the `java.util` package that the JRE provides us.
 
+<br>
+
 <img src="https://github.com/210823-Enterprise/demos/blob/main/ds%26a/StackVsQueue/imgs/java-stack2.png">
+
+<br>
 
 Let us conceptualize stacks using a stack of plates placed in a box. The first plate placed in the stack (the plate at the bottom of the stack) will be the last one to be removed, and the plate added last would be the first to be removed.
 
@@ -18,9 +22,15 @@ A queue is a lot like a stack. A Queue is also a linear structure that follows a
 
 > **Simplified:** for a stack we remove the most recently added element, but for a queue, we remove the “oldest” element.
 
+<br>
+
 <img src="https://github.com/210823-Enterprise/demos/blob/main/ds%26a/StackVsQueue/imgs/queue.png">
 
+<br>
+
 It's worth noting that some lists are queues. Look at [**LinkedList**](https://docs.oracle.com/javase/6/docs/api/java/util/LinkedList.html), for example.
+
+<br>
 
 ### After Demoing
 Complete this [Hackerrank Challenge](https://www.hackerrank.com/challenges/queue-using-two-stacks/problem)
