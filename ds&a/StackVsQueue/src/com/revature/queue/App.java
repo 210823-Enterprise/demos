@@ -1,5 +1,8 @@
 package com.revature.queue;
 
+import java.util.LinkedList;
+import java.util.Queue;
+
 public class App {
 
 	public static void main(String[] args) {
@@ -23,6 +26,39 @@ public class App {
 		myQueue.insert(99);
 		myQueue.insert(99999);
 		myQueue.view();
+		
+		// Remember we can alsways just instantiate a Queue from the JRE class like so:
+		
+		/*
+		 * Queue - A collection designed for holding elements prior to processing. 
+		 * 
+		 * Besides basic Collection operations, queues provide additional insertion, extraction, and inspection operations. Each of these methods exists in two forms: one throws 
+		 * an exception if the operation fails, the other returns a special value (either null or false, depending on the 
+		 * operation). The latter form of the insert operation is designed specifically for use with capacity-restricted Queue 
+		 * implementations; in most implementations, insert operations cannot fail.
+		 * 
+		 * For the most part, queues maintain a first-in, first-out order (FIFO). One exception to this rule is the PriorityQueue
+		 * implementation, which order elements according to a supplied comparator, or the elements' natural ordering.
+		 */
+		
+		Queue<Integer> nums = new LinkedList<>();  // LinkedList implements Queue interface!
+		// In a Queue you can store duplicate values.
+		// This is a special linkedList with specific Queue operability
+		
+		System.out.println("============= Queues! ");
+		
+		// You can add duplicates in a Queue!!
+		nums.add(23);
+		nums.add(24);
+		nums.add(25);
+		
+		while(nums.size() != 0) {
+			
+			System.out.println("Queue size: " + nums.size());
+			System.out.println("Processing... " + nums.poll()); // poll() removes the head of the queue
+			
+			String x = "something'";
+		}
 	}
 
 }
