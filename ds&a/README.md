@@ -4,6 +4,6 @@ Knowledge of data structures like Hash Tables, Lists, Trees, Graphs, and various
 > *Below is a list of demos we cover in class and the challenges you should practice immediately afterward to build your skills.  This list will expand through out the weeks.*
 
 ## Content
-- **Graph Traversal**: Breadth First Search
+- [**Graph Traversal**](https://github.com/210823-Enterprise/demos/tree/main/ds%26a/GraphTraversal): Breadth First Search
   - Hackerrank Challenge: [Breadth First Search: Shortest Reach](https://www.hackerrank.com/challenges/bfsshortreach/problem?h_r=internal-search)
 
