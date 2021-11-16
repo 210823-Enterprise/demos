@@ -18,6 +18,8 @@ A queue is a lot like a stack. A Queue is also a linear structure that follows a
 
 > **Simplified:** for a stack we remove the most recently added element, but for a queue, we remove the “oldest” element.
 
+<img src="https://github.com/210823-Enterprise/demos/blob/main/ds%26a/StackVsQueue/imgs/queue.png">
+
 It's worth noting that some lists are queues. Look at [**LinkedList**](https://docs.oracle.com/javase/6/docs/api/java/util/LinkedList.html), for example.
 
 ### After Demoing
