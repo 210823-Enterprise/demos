@@ -11,5 +11,14 @@ Stacks are used in a variety of ways when we code. We use stacks to implement fu
 
 > A simple real-world application of a stack is reversing a string letter by letter. Another good example of a data stack is the undo and redo function on a computer or text editor. Undo removes your most recent change, and redo builds upon already existing changes.
 
+<br>
+
+# Queues
+A queue is a lot like a stack. A Queue is also a linear structure that follows a First In First Out (FIFO) order, but they differ in how elements are removed. Queues are open from both ends: one end for inserting data (enqueue), and the other end for removing data (dequeue). A stack is only open from one end.
+
+> **Simplified:** for a stack we remove the most recently added element, but for a queue, we remove the “oldest” element.
+
+It's worth noting that some lists are queues. Look at [**LinkedList**](https://docs.oracle.com/javase/6/docs/api/java/util/LinkedList.html), for example.
+
 ### After Demoing
 Complete this [Hackerrank Challenge](https://www.hackerrank.com/challenges/queue-using-two-stacks/problem)
