@@ -1,5 +1,7 @@
 package com.revature.stack;
 
+import java.util.Stack;
+
 public class App {
 
 	public static void main(String[] args) {
@@ -19,6 +21,9 @@ public class App {
 		
 		// Demo the Challenge Solution here:
 		System.out.println(reverseStringSolution("Hello World"));
+		
+		// Remember you can always instantiate a Stack from the java.util package like so
+		Stack<Character> stack = new Stack<Character>();
 	}
 	
 	/**
@@ -58,5 +63,5 @@ public class App {
 		
 		return result;
 	}
-
+	
 }
