@@ -5,5 +5,5 @@ Knowledge of data structures like Hash Tables, Lists, Trees, Graphs, and various
 
 ## Content
 - [**Graph Traversal**](https://github.com/210823-Enterprise/demos/tree/main/ds%26a/GraphTraversal): Breadth First Search
-  - Hackerrank Challenge: [Breadth First Search: Shortest Reach](https://www.hackerrank.com/challenges/bfsshortreach/problem?h_r=internal-search)
+  - Hackerrank Challenge: [Breadth First Search: Shortest Reach](https://www.hackerrank.com/challenges/bfsshortreach/problem?h_r=internal-search) 👈
 
