@@ -1,7 +1,7 @@
 # Stacks
 A stack is an abstract, linear data type with a predefined capacity (or boundary). It follows a particular order for adding or removing elements. In this demo we create our own custom `SimpleStack` class to demonstrate the functionality of the `Stack` class within the `java.util` package that the JRE provides us.
 
-<img src="https://github.com/210823-Enterprise/demos/blob/main/ds%26a/StackVsQueue/imgs/java-stack.png">
+<img src="https://github.com/210823-Enterprise/demos/blob/main/ds%26a/StackVsQueue/imgs/java-stack2.png">
 
 Let us conceptualize stacks using a stack of plates placed in a box. The first plate placed in the stack (the plate at the bottom of the stack) will be the last one to be removed, and the plate added last would be the first to be removed.
 
