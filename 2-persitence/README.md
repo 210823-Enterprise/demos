@@ -1,5 +1,5 @@
 # Week 2: SQL, RDBMS, JDBC, and Cloud Computing
-- QC questions which will be asked in week 5 QC (*Monday Sept 20th*) [here](https://github.com/210823-Enterprise/demos/blob/main/week2/qc-questions.md) 👈
+- QC questions which will be asked in week 5 QC (*Monday Sept 20th*) [here](https://github.com/210823-Enterprise/demos/blob/main/2-persistence/qc-questions.md) 👈
 - On Tuesday we will begin working with PostgreSQL, DBeaver, and SQL querying & data manipulation
 - Wednesday - Friday we will connect our Java Applications to our databases and migrate our database to one hosted on the AWS cloud through an RDS.
 
@@ -20,7 +20,7 @@
 
 - Why do we use Mockito? Resource [here](https://www.tutorialspoint.com/mockito/index.htm) 👈
 
-- :star: see this Maven Demo & guide [here](https://github.com/210823-Enterprise/demos/blob/main/week2/notes/maven.md) 👈
+- :star: see this Maven Demo & guide [here](https://github.com/210823-Enterprise/demos/blob/main/2-persistence/notes/maven.md) 👈
 
 <br>
 
