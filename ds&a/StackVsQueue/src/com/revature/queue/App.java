@@ -10,7 +10,7 @@ public class App {
 		/*
 		 * If we set the max size to 9, the last 9 values inserted 
 		 * will be present, and the 10th value will overwrite the 
-		 * first (so, 99999 will be presents the *first* value, over
+		 * first (so, 99999 will represent the *first* value, over
 		 * writing 100 due to the nature of a circular queue.
 		 */
 		SimpleQueue myQueue = new SimpleQueue(9); // change between 10 and 9 to demonstrate CiruclarQueue
