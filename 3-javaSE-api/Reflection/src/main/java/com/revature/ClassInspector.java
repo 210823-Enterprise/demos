@@ -9,7 +9,9 @@ import java.util.Arrays;
 
 import com.something.Adult;
 
-// Look into Obejct Relational Mapping
+/**
+ * Credit to @WezleySingleton
+ **/
 public class ClassInspector {
 
 	/**
@@ -141,5 +143,4 @@ public class ClassInspector {
 			System.out.println();
 		}
 	}
-
 }
