@@ -1,3 +1,5 @@
+> ***After demoing the following content**, be sure to complete this [Hackerrank Challenge](https://www.hackerrank.com/challenges/queue-using-two-stacks/problem) 👈*
+
 # Stacks
 A stack is an abstract, linear data type with a predefined capacity (or boundary). It follows a particular order for adding or removing elements. In this demo we create our own custom `SimpleStack` class to demonstrate the functionality of the `Stack` class within the `java.util` package that the JRE provides us.
 

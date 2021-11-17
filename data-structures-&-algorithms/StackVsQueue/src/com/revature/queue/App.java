@@ -10,12 +10,12 @@ public class App {
 		/*
 		 * If we set the max size to 9, the last 9 values inserted 
 		 * will be present, and the 10th value will overwrite the 
-		 * first (so, 99999 will be presents the *first* value, over
+		 * first (so, 99999 will represent the *first* value, over
 		 * writing 100 due to the nature of a circular queue.
 		 */
 		SimpleQueue myQueue = new SimpleQueue(9); // change between 10 and 9 to demonstrate CiruclarQueue
 		
-		myQueue.insert(100); // If  we set the 
+		myQueue.insert(100); // If set the maxSize to 9, this first value will be overwritten by the 10th
 		myQueue.insert(1000);
 		myQueue.insert(14);
 		myQueue.insert(12);
@@ -43,7 +43,6 @@ public class App {
 		
 		Queue<Integer> nums = new LinkedList<>();  // LinkedList implements Queue interface!
 		// In a Queue you can store duplicate values.
-		// This is a special linkedList with specific Queue operability
 		
 		System.out.println("============= Queues! ");
 		
@@ -56,8 +55,6 @@ public class App {
 			
 			System.out.println("Queue size: " + nums.size());
 			System.out.println("Processing... " + nums.poll()); // poll() removes the head of the queue
-			
-			String x = "something'";
 		}
 	}
 
