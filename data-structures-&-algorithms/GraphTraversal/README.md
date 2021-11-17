@@ -1,6 +1,6 @@
 # Graph Traversal
 
-<img src="https://github.com/210823-Enterprise/demos/blob/main/ds&a/GraphTraversal/imgs/graph.png" width="600px">
+<img src="imgs/graph.png" width="600px">
 
 A Graph is a non-linear data structure consisting of nodes and edges. The nodes are sometimes also referred to as vertices and the edges are lines or arcs that connect any two nodes in the graph.
 
@@ -10,7 +10,7 @@ Graphs are also used in social networks like linkedIn, Facebook. For example, in
 
 ## Breath First Search
 
-<img src="https://github.com/210823-Enterprise/demos/blob/main/ds&a/GraphTraversal/imgs/traverse.png" width="600px">
+<img src="imgs/traverse.png" width="600px">
 
 Breadth first search is graph traversal algorithm. In this algorithm, lets say we start with node `i`, then we will visit neighbors of `i`, then neighbors of neighbors of `i` and so on.
 
