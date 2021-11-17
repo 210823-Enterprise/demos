@@ -11,7 +11,7 @@ import com.something.Adult;
 
 /**
  * Credit to @WezleySingleton
- **/
+ */
 public class ClassInspector {
 
 	/**
