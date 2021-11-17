@@ -5,7 +5,7 @@ A stack is an abstract, linear data type with a predefined capacity (or boundary
 
 <br>
 
-<img src="https://github.com/210823-Enterprise/demos/blob/main/ds%26a/StackVsQueue/imgs/java-stack2.png">
+<img src="imgs/java-stack2.png">
 
 <br>
 
@@ -26,7 +26,7 @@ A queue is a lot like a stack. A Queue is also a linear structure that follows a
 
 <br>
 
-<img src="https://github.com/210823-Enterprise/demos/blob/main/ds%26a/StackVsQueue/imgs/queue.png">
+<img src="imgs/queue.png">
 
 <br>
 
