@@ -6,7 +6,7 @@ Just like a car mechanic needs the right tool to fix a car and make it run prope
 > *Below is a list of demos we cover in class and the challenges you should practice immediately afterward to build your skills.  This list will expand through out the weeks.*
 
 ## Content
-- [**Stacks vs. Queues**](https://github.com/210823-Enterprise/demos/tree/main/ds%26a/StackVsQueue)
+- [**Stacks vs. Queues**](https://github.com/210823-Enterprise/demos/tree/main/data-structures-%26-algorithms/StackVsQueue)
   - Hackerrank Challenge: [Queue Using Two Stacks](https://www.hackerrank.com/challenges/queue-using-two-stacks/problem) 👈
   
 - [**Graph Traversal**](https://github.com/210823-Enterprise/demos/tree/main/ds%26a/GraphTraversal): Breadth First Search
