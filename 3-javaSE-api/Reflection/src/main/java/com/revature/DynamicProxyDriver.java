@@ -60,6 +60,7 @@ public class DynamicProxyDriver {
 		proxyA1.introduce();
 
 		/**
+		 * EXTRA: (just messing around)
 		 * What if we wanted to select whether we'd call the Dynamic Proxy behavior or
 		 * the original method's behavior?
 		 * 
@@ -81,9 +82,8 @@ public class DynamicProxyDriver {
 		}
 
 		/**
-		 * We used inspection to create a method that prints
+		 * We can use INSPECTION to create a method that prints
 		 * all the methods that belong to the Adult class
-		 *  bnb
 		 */
 		ClassInspector.listDeclaredMethods(Adult.class);
 
