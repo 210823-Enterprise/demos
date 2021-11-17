@@ -15,7 +15,7 @@ public class App {
 		 */
 		SimpleQueue myQueue = new SimpleQueue(9); // change between 10 and 9 to demonstrate CiruclarQueue
 		
-		myQueue.insert(100); // If  we set the 
+		myQueue.insert(100); // If set the maxSize to 9, this first value will be overwritten by the 10th
 		myQueue.insert(1000);
 		myQueue.insert(14);
 		myQueue.insert(12);
