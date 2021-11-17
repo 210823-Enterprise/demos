@@ -32,7 +32,9 @@ public class App {
 	 * Modify all the necessary variables to a char data type.
 	 * 
 	 * Once associates have the String Stack class, 
-	 * have them implement the following method:
+	 * have them code the implementation for the following method:
+	 * 	- Withn the method, a CharStack obj must be
+	 *	- instnatiated and used to return a reveresed String.
 	 */
 	public static String reverseString(String str){ 
 		
