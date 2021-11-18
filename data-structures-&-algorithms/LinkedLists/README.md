@@ -32,6 +32,8 @@ Following the image featured in the above diagram, in the `App.java` class of yo
 
 Afterwards, create a method that counts how many nodes are connected to a node passed in as the `HEAD`.  When you have solved the challenge, go ahead and create the `SinglyLinkedList.java` class to demonstrate a Simple Linked List.
 
+<br>
+
 ## Singly Linked List
 A singly linked list defined as all nodes are linked together in a few sequential manners, hence, it also knows as a linear linked list.
 
@@ -52,6 +54,8 @@ Therefore, clearly it has the beginning and the end. The main problem which come
 A doubly linked list is a linear data structure similar to a singly linked list but here each node has an extra pointer that stores the address of the previous node corresponding to each node.
 
 > *Internally, the `java.util.LinkedList` is implemented using a Doubly Linked List Data Structure*
+
+<img src="imgs/dub.png">
 
 #### Advantages:
 - Allows us to iterate in both directions.
