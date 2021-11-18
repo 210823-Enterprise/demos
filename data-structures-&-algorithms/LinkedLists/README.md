@@ -1,5 +1,7 @@
 # Linked Lists
-A Linked List is a data structure for storing a collection of items (like an array!).  LinkedLists are dynamic meaning that they can increase or decrease in size. Linked Lists allow you to insert data, shifting over all the other elements in the collection. See the below two images to understand the differences between an Array and a LinkedList.
+- A Linked List is a data structure for storing a collection of items (like an array!).  
+- Linked Lists are dynamic meaning that they can increase or decrease in size. 
+- Linked Lists allow you to insert data, shifting over all the other elements in the collection. See the below two images to understand the differences between an Array and a LinkedList.
 
 Notice that the Array is static and cannot be re-sized whereas the Linked List can have more elements (which we'll call **Nodes**  added to it.)
 
