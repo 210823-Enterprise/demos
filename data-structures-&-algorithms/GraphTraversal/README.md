@@ -1,3 +1,5 @@
+> ***After demoing the following content**, be sure to complete this [Hackerrank Challenge](https://www.hackerrank.com/challenges/bfsshortreach/problem?h_r=internal-search) 👈*
+
 # Graph Traversal
 
 <img src="imgs/graph.png" width="600px">
