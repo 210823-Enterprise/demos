@@ -10,7 +10,7 @@ Just like a car mechanic needs the right tool to fix a car and make it run prope
   - Hackerrank Challenge: [Queue Using Two Stacks](https://www.hackerrank.com/challenges/queue-using-two-stacks/problem) 👈
 
 - [**Linked Lists**](https://github.com/210823-Enterprise/demos/tree/main/data-structures-%26-algorithms/LinkedLists)
-  - Hackerrank Challenge: [tba]() 👈
+  - Hackerrank Challenge: [Linked List](https://www.hackerrank.com/challenges/30-linked-list/problem) 👈
   
 - [**Graph Traversal**](https://github.com/210823-Enterprise/demos/tree/main/data-structures-%26-algorithms/GraphTraversal): Breadth First Search
   - Hackerrank Challenge: [Breadth First Search: Shortest Reach](https://www.hackerrank.com/challenges/bfsshortreach/problem?h_r=internal-search) 👈
