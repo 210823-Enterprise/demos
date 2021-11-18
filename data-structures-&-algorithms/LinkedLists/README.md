@@ -30,4 +30,4 @@ public class Node {
 
 Following the image featured in the above diagram, in the `App.java` class of your `com.revature.singlylinkedlist` demo, instantiate several nodes.
 
-Afterwards, create a metho d
+Afterwards, create a method that counts how many nodes are connected to a node passed in as the `HEAD`.  When you have solved the challenge, go ahead and create the `SinglyLinkedList.java` class to demonstrate a Simple Linked List.

@@ -27,13 +27,24 @@ public class App {
 		
 		System.out.println(listLengthSolution(nodeA)); // should return 4 as the number of nodes connected
 		System.out.println(listLengthSolution(nodeB)); // should return 3 as the number of nodes connected
+		
+		// ======= Demo space for SinglyLinkedList.java =======
+		SinglyLinkedList mylist = new SinglyLinkedList();
+		mylist.insertFirst(100);
+		mylist.insertFirst(50);
+		mylist.insertFirst(99);
+		mylist.insertFirst(88);
+		mylist.insertLast(9999999);
+		
+		mylist.displayList();
+		
 	}
 	
 	/**
 	 * Challenge: Can you implement the following method?
 	 * 
 	 * @param aNode represents the head
-	 * The method will count how many nodes are included in the list
+	 * The method will count how many nodes are included in a lis .
 	 * (including the head node as one of them).
 	 * 
 	 * @return The # of nodes attached to the the node 
@@ -63,4 +74,6 @@ public class App {
 
 		return count;
 	}
+	
+	// After solving this challenge, create the SinglyLinkedList class
 }
