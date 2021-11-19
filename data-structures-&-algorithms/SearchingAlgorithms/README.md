@@ -1,3 +1,5 @@
+> ***After demoing the following content**, be sure to complete this [Hackerrank Challenge](https://www.hackerrank.com/contests/launchpad-1-winter-challenge/challenges/binary-search-basic/problem) 👈*
+
 # Searching Algorithms
 
 - **Basic Linear Search** - O(n) Linear
