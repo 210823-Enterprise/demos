@@ -8,7 +8,6 @@ public class App {
 		int x = 12;
 
 		linearSearch(arr, x);
-
 	}
 
 	/**
