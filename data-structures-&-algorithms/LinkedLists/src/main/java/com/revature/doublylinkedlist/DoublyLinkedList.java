@@ -122,7 +122,7 @@ public class DoublyLinkedList {
 
 	}
 
-	// assume non-empty list
+	// Could be challenge ~ assume non-empty list
 	public Node deleteKey(int key) {
 		Node current = first; // start from the beginning
 		while (current.data != key) {
