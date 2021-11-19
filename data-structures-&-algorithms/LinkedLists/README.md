@@ -1,3 +1,5 @@
+> ***After demoing the following content**, be sure to complete this [Hackerrank Challenge](https://www.hackerrank.com/challenges/30-linked-list/problem) 👈*
+
 # Linked Lists
 - A Linked List is a data structure for storing a collection of items (like an array!).  
 - Linked Lists are dynamic meaning that they can increase or decrease in size. 
