@@ -1,4 +1,4 @@
-> *Here is the Hackerrank Challenge: [Merge Sort - Counting Inversions (*Hard*)](https://www.hackerrank.com/challenges/ctci-merge-sort/problem) 👈 
+> *Here is the Hackerrank Challenge: [Merge Sort - Counting Inversions (*Hard*)](https://www.hackerrank.com/challenges/ctci-merge-sort/problem) 👈 *
   - Solution [here](https://allhackerranksolutions.blogspot.com/2019/02/merge-sort-counting-inversions-hacker.html).
 
 # Sorting Algorithms
@@ -59,7 +59,3 @@ mergeSort(arr, left, right) {
     }   
 }
 ```
-
-
-
-
