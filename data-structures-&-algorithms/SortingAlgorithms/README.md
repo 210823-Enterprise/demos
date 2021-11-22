@@ -1,5 +1,5 @@
-> *Here is the Hackerrank Challenge: [Merge Sort - Counting Inversions (*Hard*)](https://www.hackerrank.com/challenges/ctci-merge-sort/problem) 👈 *
-  - Solution [here](https://allhackerranksolutions.blogspot.com/2019/02/merge-sort-counting-inversions-hacker.html).
+> *Here is the Hackerrank Challenge: [Merge Sort - Counting Inversions (*Hard*)](https://www.hackerrank.com/challenges/ctci-merge-sort/problem)* 👈 <br>
+>  *Solution [here](https://allhackerranksolutions.blogspot.com/2019/02/merge-sort-counting-inversions-hacker.html).*
 
 # Sorting Algorithms
 A Sorting Algorithm is used to rearrange a given array or list elements according to a comparison operator on the elements. The comparison operator is used to decide the new order of element in the respective data structure.
