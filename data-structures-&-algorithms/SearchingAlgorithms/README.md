@@ -13,7 +13,7 @@
 ## Binary Search
 Imagine that you have a shelf of books and you are looking for a book authored by *Shakespear*.  With Linear search, you would start from the beginning and check each book.  The faster approach (O(log n)) would be by using **Binary Search**.
 
-> The collection must be **sorted** to apply Binary search
+> The collection must be **sorted** to apply Binary Search
 
 - Imagine that the books are **sorted by last name**.
 - With Binary Search you would **first located the center of the book shelf**.
