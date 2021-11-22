@@ -21,7 +21,12 @@ Just like a car mechanic needs the right tool to fix a car and make it run prope
 
 <br>
 
+- [**Sorting Algorithms**](https://github.com/210823-Enterprise/demos/tree/main/data-structures-%26-algorithms/SortingAlgorithms)
+  - Hackerrank Challenge: [Merge Sort - Counting Inversions (*Hard*)](https://www.hackerrank.com/challenges/ctci-merge-sort/problem) 👈 
+  - Solution [here](https://allhackerranksolutions.blogspot.com/2019/02/merge-sort-counting-inversions-hacker.html)
+
+<br>
+
 - [**Graph Traversal**](https://github.com/210823-Enterprise/demos/tree/main/data-structures-%26-algorithms/GraphTraversal): Breadth First Search
   - Hackerrank Challenge: [Breadth First Search: Shortest Reach](https://www.hackerrank.com/challenges/bfsshortreach/problem?h_r=internal-search) 👈
-
 
