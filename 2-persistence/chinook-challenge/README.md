@@ -11,6 +11,7 @@
 * Enter `enterprise211129.cvtq9j4axrge.us-east-1.rds.amazonaws.com` as *Host*
 * Password is `postgres`
 * Test Connection > if successful, click finish
+* Open a script in the **Chinook** Schema
 `
 <br>
 
