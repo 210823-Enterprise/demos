@@ -3,15 +3,15 @@
 
 <br>
 
-## 1.0 Build the Chinook Schema
+## 1.0 Access the Chinook Schema
 > *You don't have to do this...just use the schema I set up for you in the RDS* 
 
-* In DBeaver, under `postgres` > `Schemas` > Create a new schema called **chinook**.
-* Run the provided `chinook.sql` scripts in sequential order within your new schema. 
-  - Each script should be run on a fresh SQL script.
-* Refresh the schema.
-* Open a new SQL editor and run the following queries:
-
+* In DBeaver,Create a new connection
+* Click Postgres
+* Enter `enterprise211129.cvtq9j4axrge.us-east-1.rds.amazonaws.com` as *Host*
+* Password is `postgres`
+* Test Connection > if successful, click finish
+`
 <br>
 
 ## 2.0 Challenges
