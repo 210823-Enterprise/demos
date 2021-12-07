@@ -1,5 +1,5 @@
 # SQL Notes
-*The following are topics that you may be asked about in our interviews on Monday*.
+*The following are topics that you may be asked about in QC or a client interview*.
 
 SQL: Structured Query Language
 
