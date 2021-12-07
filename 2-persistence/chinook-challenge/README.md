@@ -25,9 +25,9 @@
 * `SELECT` first name from Customer and sort result set in ascending order by city
 
 ### 2.3 INSERT INTO
-* `SELECT` two new records into Genre table 
-* `SELECT` two new records into Employee table
-* `SELECT` two new records into Customer table
+* `INSERT` two new records into Genre table 
+* `INSERT` two new records into Employee table
+* `INSERT` two new records into Customer table
 
 ### 2.4 UPDATE
 * `UPDATE` Aaron Mitchell in Customer table to Robert Walter
