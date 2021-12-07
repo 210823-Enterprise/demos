@@ -4,6 +4,8 @@
 <br>
 
 ## 1.0 Build the Chinook Schema
+> *You don't have to do this...just use the DB * 
+
 * In DBeaver, under `postgres` > `Schemas` > Create a new schema called **chinook**.
 * Run the provided `chinook.sql` scripts in sequential order within your new schema. 
   - Each script should be run on a fresh SQL script.
