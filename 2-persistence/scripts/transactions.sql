@@ -38,10 +38,13 @@ COMMIT;
 
 SELECT * FROM bank_accounts;
 
+-- How to commit a tx from jdbc
+-- https://mkyong.com/jdbc/jdbc-transaction-example/
+
 -- Transactions are ACIDic
 -- - A proper TRANSACTION must have the following properties:
 
--- A = Atomicity: it either happens or it doesn't. It either happens or it doesn't
+-- A = Atomicity: it either happens or it doesn't.
 -- C = Consistency: Referential Integrity is maintained and constraints are changed properly upon successful transaction
 -- I = Isolation: Transactions occur independently of eachother
 -- D = Durability: Ensures that the result of a commited transaction persists in the case of system failure.
