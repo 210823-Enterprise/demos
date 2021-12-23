@@ -20,7 +20,7 @@ This project will be to create a custom object relational mapping (ORM) framewor
 
 7. Session-based caching to minimize calls to the database
 
-It is encouraged that you provide clear documentation on how to use your framework in the form of a `README.md` file example [here](https://github.com/210823-Enterprise/demos/edit/main/4-servlets-devops/project-1/p1-sample-readme.md).
+It is encouraged that you provide clear documentation on how to use your framework in the form of a `README.md` file example [here](https://github.com/210823-Enterprise/demos/blob/main/4-servlets-devops/project-1/p1-sample-readme.md).
 
 <br>
 
