@@ -6,6 +6,8 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class EmailApplicaiton {
 	
+	// https://www.youtube.com/watch?v=ZwcHeLhvuq4&t=891s&ab_channel=ProgrammingTechie
+	
 	public static void main(String[] args) {
 		
 //		EmailClient emailClient = new EmailClient(new AdvancedSpellChecker());
