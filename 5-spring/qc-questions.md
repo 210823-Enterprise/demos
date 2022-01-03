@@ -18,6 +18,8 @@
 - What makes an API RESTful?
   - *i.e **What are the 6 constraints of REST?***
 
+- What is the [Richardson Maturity Model](https://martinfowler.com/articles/richardsonMaturityModel.html)?
+
 
 <br>
 
