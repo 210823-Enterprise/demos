@@ -1,8 +1,8 @@
 # Week 5: REST & Spring 🍃
 <br>
 
-## QC on Tuesday Sept. 28th
-*QC Questions on Spring & REST [here](https://github.com/210823-Enterprise/demos/blob/main/week5/qc-questions.md)*
+## QC on ___
+*QC Questions on Spring & REST [here](https://github.com/210823-Enterprise/demos/blob/main/5-spring/qc-questions.md)*
 
 <br>
 
