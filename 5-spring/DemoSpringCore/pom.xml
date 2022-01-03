@@ -1,0 +1,78 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.revature</groupId>
+	<artifactId>DemoSpringCore</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+
+	<properties>
+		<maven.compiler.target>1.8</maven.compiler.target>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<!-- This provides a central location to update the version of Spring Dependencies 
+			found in the Spring Framework Family -->
+		<spring.version>5.3.9</spring.version>
+	</properties>
+
+
+	<dependencies>
+
+		<!-- Google: Spring Context mvn repository -->
+		<!-- Spring contexts are your tickets to bringing beans to your Java app. 
+			Spring contexts are also called Spring IoC containers, which are responsible 
+			for instantiating, configuring, and assembling beans by reading configuration 
+			metadata from XML, Java annotations, and/or Java code in the configuration 
+			files. -->
+
+		<!-- Spring Context: (contains Spring Core)
+		https://mvnrepository.com/artifact/org.springframework/spring-context -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+
+<!-- What is the IoC Container? -->
+<!-- The Container needs 2 things to produce a working application -->
+<!-- 	- Beans (Spring Beans which represent POJOs that the IoC container will manage) -->
+<!-- 	- Metadata (Info on the relationship between these Beans)  -->
+
+
+	<!-- SLF4J or Simple logging Facade for Java is not really a logging implementation, 
+		instead, it's an abstraction layer, which allows you to use any logging library 
+		in the back-end. 
+		
+		SLF4J makes your code independent of any particular logging API, which 
+		is a good thing for public API developers.-->
+		
+<!-- Read more: https://javarevisited.blogspot.com/2013/08/why-use-sl4j-over-log4j-for-logging-in.html#ixzz7Gt0pxKD2 -->
+
+		  <dependency> <!-- API -->
+		        <groupId>org.slf4j</groupId>
+		        <artifactId>slf4j-api</artifactId>
+		        <version>1.7.25</version>
+		  </dependency>
+		  
+		  <dependency> <!-- Binding to Log4j -->
+		        <groupId>org.slf4j</groupId>
+		        <artifactId>slf4j-log4j12</artifactId>
+		        <version>1.7.25</version>
+		  </dependency>
+		  
+		  <dependency> <!-- Log4j Dependency -->
+		        <groupId>log4j</groupId>
+		        <artifactId>log4j</artifactId>
+		        <version>1.2.17</version>
+		  </dependency>
+		  
+		<!-- During deployment, it is necessary to provide the actual logging implementation 
+		otherwise SLF4J will ignore all the log messages. The SLF4J API talks to 
+		the actual logging implementation via a SLF4J binding. Also, the SLF4J binding 
+		is specific to the logging framework you want to use in your project. In 
+		the absence of the correct SLF4J binding, SLF4J API won’t recognize the logging 
+		framework. 
+		
+		https://examples.javacodegeeks.com/enterprise-java/slf4j/slf4j-configuration-file-example/-->
+		  
+	</dependencies>
+</project>

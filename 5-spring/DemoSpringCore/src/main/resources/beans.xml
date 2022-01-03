@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- This was all pasted from the documentation here 
+	https://docs.spring.io/spring-framework/docs/3.2.x/spring-framework-reference/html/beans.html -->
+
+	<!-- id can be whatever you want.... -->
+	<bean id="myNumberGenerator"
+		class="com.revature.NumberGeneratorImpl">
+	</bean>
+
+	<!-- After creating the GameImpl class, create this bean mapping -->
+<!-- 	<bean id="game" class="com.revature.GameImpl"> -->
+<!-- 		<constructor-arg ref="myNumberGenerator" /> -->
+<!-- 	</bean> -->
+
+<!-- For SETTER INJECTION (after Constructor Injection) -->
+	<bean id="game" class="com.revature.GameImpl">
+		<property name="numberGenerator" ref="myNumberGenerator" />
+	</bean>
+	
+<!-- 	When to Use Setter or Constructor Based DI? -->
+	
+<!-- 	- Since you can mix constructor-based & setter-based DI, it is a good rule of thumb  -->
+<!-- 	  to use CONSTRUCTORS for MANDATORY dependencies and SETTER methods for optional -->
+<!-- 	  dependencies. -->
+	  
+<!-- 	- The Spring team generally advocates constructor injection as it enables one to  -->
+<!-- 	  implement application components as immutable objects and the ensure that required -->
+<!-- 	  dependencies are not null. -->
+
+
+</beans>
