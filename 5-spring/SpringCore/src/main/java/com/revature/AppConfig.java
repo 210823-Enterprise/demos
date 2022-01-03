@@ -2,7 +2,10 @@ package com.revature;
 
 import org.springframework.context.annotation.ComponentScan;
 
-// This class does literally the same thing that the Beans.xml file does when we load it
+/**
+ * This class does literally the same thing that the Beans.xml file does when we load it
+ *
+ */
 
 @ComponentScan(basePackages = "com.revature") // search for all classes with @Component annotation
 public class AppConfig {

@@ -5,7 +5,6 @@
         https://www.springframework.org/schema/beans/spring-beans.xsd">
 
 <!--  XML Bean Configuration  -->
-
     <bean id="emailClient" class="com.revature.EmailClient">  
 		 <!--<constructor-arg ref="advancedSpellChecker" /> -->
 		 <property name="spellChecker" ref="basicSpellChecker"></property>
