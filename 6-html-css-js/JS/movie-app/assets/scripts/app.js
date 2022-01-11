@@ -1,23 +1,50 @@
 // capture the add-modal element
 const addMovieModal = document.getElementById('add-modal'); // also could have used querySelector('#add-modal');
-
 // we will need to add functionality to this button so we should capture it first
 const startAddMovieButton = document.querySelector('header button'); // this is a CSS query tag select which selects the button
                                                                      // element within the header element. (lines 53 - 56)
 
 // (3)
 const backdrop = document.getElementById('backdrop');
-
 // (5a) capture the parent element and query the element with the .btn--passive class
 const cancelAddMovieButton = addMovieModal.querySelector('.btn--passive')
 // (6a)
 const confirmAddMovieButton = cancelAddMovieButton.nextElementSibling;
-
 // (6c) create a collection object that represents all of the input fiels in addMovieModal
 const userInputs = addMovieModal.querySelectorAll('input'); // or .getElementsByTagName('input')
+// (9b)
+const entryTextSection = document.getElementById('entry-text');
 
 // (7a)
 const movies = []; // then build movie template literal;
+
+// (9a)
+const updateUI = () => {
+    // (9c)
+    if (movies.length === 0) {
+        entryTextSection.style.display = 'block';
+      } else {
+          // this removes the block
+        entryTextSection.style.display = 'none'; // then add to confirmAddMovieHandler() (9d)
+      }
+}
+
+// (10) create function to generate object that represents userInput
+const renderNewMovieElement = (id, title, imageUrl, rating) => {
+    const newMovieElement = document.createElement('li');
+    newMovieElement.className = 'movie-element';
+    newMovieElement.innerHTML = `
+      <div class="movie-element__image">
+        <img src="${imageUrl}" alt="${title}">
+      </div>
+      <div class="movie-element__info">
+        <h2>${title}</h2>
+        <p>${rating}/5 stars</p>
+      </div>
+    `;
+    const listRoot = document.getElementById('movie-list');
+    listRoot.append(newMovieElement); // (10b) call in confirmAddMovieHandler() before updateUI()
+}
 
 // (3) challenge - separate function out so that I can re-use it later
 const toggleBackdropHandler = () => {
@@ -75,6 +102,8 @@ const confirmAddMovieHandler = () => {
     // (7d) close the modal
     toggleMovieModal(); // then add (8) clearMovieInput() to clear the value
     clearMovieInput();
+    /* 10b*/ renderNewMovieElement(newMovie.id, newMovie.title, newMovie.image, newMovie.rating)
+    updateUI(); // (9d) -> then 10 renderNewMovieElement();
 };
 
 /** add an event listener to the startAddMovieButton and define a function to occur upon a click
@@ -110,3 +139,7 @@ cancelAddMovieButton.addEventListener('click', cancelAddMovieHandler);
 
 // (6) Add confirmAddMovieModal button functionality
 confirmAddMovieButton.addEventListener('click', confirmAddMovieHandler)
+
+
+
+
