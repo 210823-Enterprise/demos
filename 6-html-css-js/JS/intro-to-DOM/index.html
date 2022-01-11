@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro to the DOM</title>
+
+    <!-- Adding defer tells the nbrowser to download the script early but only run it
+         after the browser is finished parsing all the elements in html below -->
+    <script src="app.js" defer></script>
+</head>
+<body>
+<!-- (1) in Dev Tools: this is represented as a Node within the DOM -->
+    <header><h1 id="main-title">Dive Into the DOM</h1></header> <!-- In Dev Tools, highlight over this and run console.dir($0) which will describe thr properties of the node -->
+    <!-- Note that there are event properties like "onclick" which we'll be modifying -->
+
+    <!-- DOM Node are just JS objects in the end - i.e reference values.  The following
+    methods are Query Selectors which return the object references (addresses) 
+
+    A Node is just an object that makes up the DOM. ELEMENTS are one type of node that possess properties and
+    methods so that we can interact with them via JavaScript.
+
+        getElementById()
+        getElementsByClassName()
+
+        -- These return collections of elements (array-like objects): NodeList --
+        querySelector() -- parameter: CSS selector such as element, class name, id etc...
+        getElementsByTagName()
+-->
+
+<!-- (2) in Dev Tools run console.dir(document.getElementById('main-title')) -->
+<ul>
+    <li>Item 1</li>
+    <li class="list-item">Item 2</li>
+    <li class="list-item">Item 3</li>
+</ul>
+
+
+<!--This can be added at the bottom OR added to the top with the word defer-->
+    <!-- <script src="app.js"></script> -->
+</body>
+</html>
