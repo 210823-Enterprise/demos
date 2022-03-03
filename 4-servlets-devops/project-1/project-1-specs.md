@@ -60,8 +60,8 @@ It is encouraged that you provide clear documentation on how to use your framewo
 
 ## Workflow Tips
 - [ ] Use a [kanban board](https://www.atlassian.com/agile/kanban/boards) like [Trello](https://trello.com/en-US) for task management.
-- [ ] Get started on designing your reasearch tasks and setting up your repository *immediately*.
-- [ ] Every day hold a standup.  Each person should speak on:
+- [ ] ⭐ Get started on designing your reasearch tasks and setting up your repository *immediately*.
+- [ ] Every day hold (at least) a 15 min standup meeting.  Each person should speak on:
     - What did you do yesterday?
     - What will you accomplish today?
     - What are your blockers?
