@@ -5,9 +5,11 @@
 
 This project will be to create a custom object relational mapping (ORM) framework. This framework will allow for a simplified and SQL-free interaction with the relational data source. The requirements of the project are purposefully vague, the intention is to allow for you to be creative in your implementation of this framework. There are many ways that this task can be approached, and you are encouraged to explore existing Java ORM implementations in order to get some inspiration. Some suggested features that your ORM can provide are:
 
-1. A public API that can be added as a dependency in other projects
+1. A public API that can be added as a Maven dependency in other projects
 
 2. File-based or programmatic configuration of entities
+     - think of programmatic configuration as the usage of methods & annotations like this in Hibernate
+     - think of file-based configuration as a separate file that defines which classed should be mapped as 
 
 3. Programmatic persistence of entities (basic CRUD support)
      - Think of the `save()` and `get()` metthod's from Hibernate's `Session` interface.
@@ -18,6 +20,7 @@ This project will be to create a custom object relational mapping (ORM) framewor
     - You are welcome to use an external library like Apache DBCP2 like in [these examples](https://www.baeldung.com/java-connection-pooling).
 
 6. Lightweight session creation
+    - A session is a connection to the database
 
 7. Session-based caching to minimize calls to the database
     - By "Session-based caching" think of a hashmap or some data struture that you would store previously retrieved objects in. 
